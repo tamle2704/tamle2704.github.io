@@ -1,71 +1,123 @@
-
 * {
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
 }
 body {
+	background-color: #f4f7fa;
 	width: 80%;
-	background: #f4f7fa;
 	margin: auto;
 }
-img {
+#banner{
+		margin: auto;
+}
+#banner img {
+	min-width: 100%;
+	max-width: 100%;
+	margin: auto;
+}
+.content1 img {
 	max-width: 300px;
-	border-style: solid;
-	border-color: black;
+	min-width: 300px;
+	border-radius: 4px;
 }
-pre{
-	color: red;
-	font-size: 21px;
+.content1 img:hover {
+		border-radius: 40px;
 }
-a {
-	text-decoration: none;
+.content1{
+	box-shadow: 0px 1px 1px 1px rgba(158,136,158,1);
+	color: black;
+	background-color: #f4f7fa;
+	margin: 15px;
+	min-height: 300px;
+	border-radius: 4px;
+	padding: 0;
+}
+#content {
+	display: flex;	
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #f4f7fa;
+	border-radius: 5px;
+	box-shadow: 0px 0px 2px 1px rgba(158,136,158,1);
+	margin: 1em;
+}
+
+a{
+    text-decoration: none;
 }
 a:link {
-	color: green;
+	color: black;
 }
 a:visited {
 	color: black;
 }
 a:hover {
-	color: blue;
+	color: green;
 }
 a:active {
 	color: red;
 }
-.link1 {
-	font-size: 22px;
+
+#header {
+	border-radius: 5px;
+	box-shadow: 0px 1px 1px 1px rgba(158,136,158,1);
+	color: white;
+	font-size: 18px;
+	
 }
-.anh1 {
-	max-width: 500px;
-}
-#header1 {
+#menu {
 	background: white;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	color: black;
-	padding: 1em;
-	text-align: center;
+	padding: 5px;
 	margin-bottom: 1em;
 	margin-top:0.5em;
+	display: block;
+	text-align: center;
+	position: relative;
 }
-#header {
-	background: blue;
-	color: white;
-	padding: 1em;
+#menu a{
+	padding-right: 15px;
+}
+#menu > a:first-child {
+	padding: 4px;
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+	border-radius: 50%;
+	top: -161px;
+    left: 78px;
+    position: absolute;
+}
+#menu > a:first-child > img {
+	max-width: 140px;
+	border-radius: 50%;
+}
+#menu-doc {
+	width: 108px;
+	position: absolute;
+	top: 58%;
+	right: 1%;
+}
+#menu-doc a {
+	background-color: #eee; 
+	color: black; 
+	display: block;
+	text-decoration: none;
 	text-align: center;
 }
-
-#content {
-	background: white;
-	color: black;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	padding: 1em;
-	margin-bottom: 0.5em;
-	margin-top: 1em;
-}
-
 #footer {
-	background: white;
-	color: white;
-	padding: 1em;
 	text-align: center;
+	margin: 15px;
+	padding: 15px;
+	border-top: 1px solid black;
+}
+#backtop {
+	position: fixed;
+	right: 2%;
+	bottom: 30px;
+	border-bottom-style: solid;
+	border-color: black;
+}
+#backtop > a > img {
+	max-width:50px;
 }
