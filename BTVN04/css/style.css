@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+.header h1 {
+	font-size: 3em;
+	line-height: 1.5em;
+	text-align: center;
+	animation: title 5s ease infinite;
+}
+h1 {
+	color: black;
+}
+@keyframes title {
+    0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
+body {
+	background-color: #EEEEEE;
+	color: white;
+}
+.wrap {
+	max-width: 1000px;
+	margin: auto;
+}
+.content {
+	display: flex;	
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #FFFFCC;
+	border-radius: 5px;
+	box-shadow: 0px 0px 2px 1px rgba(158,136,158,1);
+	margin: auto;
+}
+.content1 img {
+	width: 300px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	border: red;
+	border-style: solid;
+	border-width: 4px;
+	transition: all 1s ease ;
+}
+.content1 img:hover {
+	border-radius: 40px;
+	transform: scale(1.2,1.2);
+}
+.content1{
+	box-shadow: 0px 1px 1px 1px rgba(158,136,158,1);
+	color: black;
+	background-color: blue;
+	margin: 15px;
+	max-width: 300px;
+	height: 300px;
+	border-radius: 4px;
+	padding: 0;
+}
+.heart {
+	text-align: center;
+}
+.heart img {
+	width: 150px;
+  }
+ .heart:hover {
+	animation: beat 0.5s infinite alternate;
+	text-align: center;
+}
+@keyframes beat{
+	to { transform: scale(1.2,1.2); }
+}
+.footer {
+	border-top: black solid 1px;
+	margin-top: 2em;
+}
+p{
+	text-align: right;
+	font-size: 20px;
+	color: black;
+}
+p:hover{
+	text-align: right;
+	position: relative;
+    animation: move 15s ease infinite;
+    animation-direction: normal;
+	
+}
+@keyframes move{
+        0%  {top:0px;right:-150px; opacity: 0.1;}
+		10%	{top:0px;right:0px; opacity: 0.99999}
+		75% {top:0px;right:600px; opacity: 0.9999}
+		90% {top:0px;right:600px; color: transparent;}
+		100% {top:0px;right:600px; color: transparent;}
+    }
