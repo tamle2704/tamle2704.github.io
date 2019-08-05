@@ -1,0 +1,40 @@
+* {
+	box-sizing: border-box;
+}
+.footer {
+	background-color: #464646;
+	width: 100%;
+	color: #919294;
+    line-height: 1.8em;
+	font-size: 14px;
+	display: flex;
+    flex-wrap: wrap;
+    padding-right: 15px;
+    padding-left: 15px;
+	font-family: 'Roboto', sans-serif;
+	justify-content: space-around;
+	padding-bottom: 20px;
+}
+.cot1,.cot2,.cot3,.cot4 {
+	display: block;
+	margin-right: 15px;
+}
+a {
+	color: #919294;
+	text-decoration: none;
+}
+a:hover {
+	color: #919294;
+	text-decoration:underline;
+}
+h4{
+	margin-bottom: 0.5rem;
+    line-height: 1.2em;
+	color: #fff;
+	font-size: 1.2rem !important;
+}
+.content {
+	font-family: "Font Awesome 5 Brands";
+	font-size: 30px;
+	padding-right: 15px;
+}

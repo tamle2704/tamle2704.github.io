@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background: url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+}
+.fix{
+	position: fixed;
+}
+.top{
+	width: 100%;
+	height: 500px;
+	animation: top-run ease-in-out 1s 0.5s 1;
+}
+@keyframes top-run {
+	0%{top:-400px;}
+	100%{top:-80px;}
+}
+.top img{
+	width: 75%;
+}
+.top img:first-child{
+	position: absolute;
+	top: -100px;
+	right: -200px;
+}
+.top img:last-child{
+	position: absolute;
+	top:-180px;
+	left: -180px;
+}
+.gift {
+	width: 40%;
+	bottom: -60px;
+	right: 30%;
+	animation: bottom-run 1s ease-in-out 0.5s 1;
+}
+@keyframes bottom-run {
+	0%{bottom:-500px;}
+	100%{bottom:-50px;}
+}
+.hpbd{
+	top:30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.hpbd span::before{
+	content:"";
+	text-shadow: 0 5px 0 rgba(255,255,255,1);
+	text-transform: uppercase;
+	font-size: 70px;
+	font-family: Minion, cursive,serif;
+	animation: text 4s linear 3s infinite;
+}
+@keyframes text {
+	0%{content:"happy";
+	color:#FFFF99;}
+	20%{content:"birthday";
+	color:#FF99CC;}
+	40%{content:"to";
+	color:#0099CC;}
+	60%{content:"you";
+	font-size: 100px;color:#FF3333;}
+	100%{content:"you";
+	color:#FF3333;}
+}
+.meme {
+	left: 7%;
+	top: 5%;
+	animation: meme-run 1s ease-in-out 0.5s 1;
+}
+@keyframes meme-run {
+	0%{top:-500px;}
+	100%{left: 7%;top: 5%;}
+}
+.meme1{
+	width: 100%;
+	transform: scaleX(-1);
+    right: 0px;
+    bottom: 0px;
+	animation: meme-run1 1s ease-in-out 0.5s 1;
+}
+@keyframes meme-run1 {
+	0%{right:-500px;}
+	100%{right: 0px;bottom: 0px;}
+}
+.meme2 {
+	width: 100%;
+    left: 0px;
+    bottom: 0px;
+	animation: meme-run2 1s ease-in-out 0.5s 1;
+}
+@keyframes meme-run2 {
+	0%{left:-500px;}
+	100%{left: 0px;bottom: 0px;}
+}
