@@ -1,0 +1,42 @@
+body{
+	font-family: Arial;
+	font-size: 16px;
+	color: black;
+}
+
+#khung{
+	margin: 0px;
+	padding: 30px 10px 10px 10px;
+	border: 2px solid #333;
+	width: 285px;
+	border-radius: 4px;
+}
+.clear_all {
+	clear: both;
+}
+
+.button {
+	margin: 0 0px 15px 15px;
+	padding: 10px 10px 10px 10px;
+	float: left;
+	text-align: center;
+	background-color: white;
+	color: black;
+	width: 38px;
+	border: 1px solid red;
+	border-radius: 2px;
+}
+.button.first{
+	margin-left: 0px;
+}
+.button:hover{
+	background-color: pink;
+}
+#ket_qua{
+	margin: 0px 0px 15px 0px;
+	padding: 10px;
+	text-align: right;
+	width: 265px;
+	outline: none;
+	border: 1px solid black;
+}
