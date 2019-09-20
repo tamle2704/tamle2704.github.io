@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="Utf-8"/>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+</head>
+<body>
+    <div class="login">
+    <h2>NGUYỄN THỊ ĐĂNG KÝ</h2>
+    <img src="img/tho.jpg"/>
+    <fieldset>
+    <form accept-charset="utf-8" action="result.html" method="get" id="formdemo">
+        <label>Họ và tên</label>
+        <input  type="text" placeholder="Cho xin cái tên đi đằng ấy!" name="username" required/>
+        <label>Ngày sinh</label>
+        <input class="date" type="date"  name="date" id="date" required/>
+        <label>Giới tính</label>
+        <div class="radio">    
+        <input type="radio" name="gender" value="Nam"/> Nam
+        <input type="radio" name="gender" value="Nữ" /> Nữ
+        <input type="radio" name="gender" value="Bê đê"/> Bê đê
+        </div>
+        <label>Địa chỉ</label>
+        <input type="text" placeholder="Cho xin cái địa chỉ nhà đi!" name="address" required/>
+        <label>Số điện thoại</label>
+        <input type="tel" placeholder="Biết tên rồi phải biết số điện thoại chứ nhỉ" name="phone" required/>
+        <label>Email</label>
+        <input type="email" placeholder="Cho xin thêm cái email vào đây!" name="email"required/>
+        <label>Mật khẩu</label>
+        <input type="password" placeholder="Password nhập ở đây!!" name="password" required/>
+        <button type="submit" >Gửi</button>
+    </form>
+    </fieldset>
+    </div>
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            
+            $("#formdemo").validate({
+                        rules: {
+                            username: "required",
+                            address: {
+                                required: true,
+                                minlength: 2
+                            }
+                        },
+                        messages: {
+                            username: "Cho xin cái tên đi đằng ấy!",
+                            address: {
+                                required: "Biết tên rồi phải biết số điện thoại chứ nhỉ",
+                                minlength: "Địa chỉ gì ngắn thế anh giai"
+                            }
+                        }
+                    });
+        });
+        </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="Utf-8"/>
+    <title>Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="login">
+    <h2>Đăng ký thành công rồi này!!</h2>
+	<img src="img/tho.jpg"/>
+		<p id="name">Xin chào </p>
+		<p id="contact">Thông tin cá nhân của bạn: 	</p>
+		<p id="date">Sinh ngày: </p>
+		<p id="gender">Giới tính: </p>
+		<p id="email">Email: </p>
+		<p id="address">Địa chỉ: </p>
+		<p id="telephone">Điện thoại: </p>
+		<a href="index.html" class="back">Về trang chủ</a>
+	</div>
+		<script>
+			let inf = decodeURIComponent(location.href);
+			inf = inf.slice(inf.indexOf('?') + 1).replace(/\+/g," ");;
+			let array = inf.split("&");
+			let result = {};
+			array.forEach(function(value){
+				let arr = value.split("=");
+				result[arr[0]] = arr[1];
+			});
+			$("#name").append(result.username);
+			$("#date").append(result.date);
+			$("#birthmonth").append(result.birthmonth);
+			$("#birthyear").append(result.birthyear);
+			$("#gender").append(result.gender);
+			$("#email").append(result.email);
+			$("#address").append(result.address);
+			$("#telephone").append(result.phone);
+		</script>
+	</body>
+</html>
