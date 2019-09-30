@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+input {
+    display: block;
+    width: 450px;
+    padding: 5px 10px 5px 10px;
+    margin: 0px auto 15px auto;
+    border: 1px solid black;
+}
+.sort:hover{
+    cursor: pointer;
+}
