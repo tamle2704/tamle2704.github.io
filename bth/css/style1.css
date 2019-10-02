@@ -5,10 +5,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
-.wrap {
-	max-width: 1200px;
-	margin: auto;
-}
 .header {
 	position: relative;
 }
@@ -88,4 +84,24 @@ span {
 	75% {top:0px;right:600px; opacity: 0.9999}
 	90% {top:0px;right:600px; color: transparent;}
 	100% {top:0px;right:600px; color: transparent;}
+}
+@media (max-width: 600px){
+	#content {
+		display: flex;
+		flex-direction: column;
+	}
+	.content1 {
+		margin: auto;
+	}
+	p img {
+		width: 100%;
+	}
+	.menu img {
+		display: none;
+	}
+	.footer p {
+		animation: none;
+		font-size: 16px;
+		text-align: center;
+	}
 }
