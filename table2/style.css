@@ -12,3 +12,6 @@ input {
 .sort:hover{
     cursor: pointer;
 }
+mark {
+    background-color: red;
+}
