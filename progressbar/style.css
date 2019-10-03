@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.input {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 15px auto 15px auto;
+    padding: auto;
+
+}
+input {
+    display: block;
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    margin: 15px;
+}
+.progress {
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 5px;
+    width: 80%;
+    height: 30px;
+    background: #fff;
+}
+
+.progress div {
+    border-radius: 3px;
+    width: 0px;
+    height: 30px;
+    background: linear-gradient(to right, #fc466b, #3f5efb);
+    color: white;
+    text-align: center;
+}
