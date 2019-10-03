@@ -145,9 +145,9 @@
                 let c = tester ? a : b;
                 let d = tester ? b : a;
                 if( c == a ){
-                    $(sort).find("i").addClass("fa-sort-down").removeClass("fa-sort");
-                }else{
                     $(sort).find("i").addClass("fa-sort-up").removeClass("fa-sort");
+                }else{
+                    $(sort).find("i").addClass("fa-sort-down").removeClass("fa-sort");
                 }
                 if (c < d) {
                     return -1;
