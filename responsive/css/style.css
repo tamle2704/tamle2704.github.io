@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    background-color: green;
+    max-width: 1200px;
+    padding: 20px;
+    display: grid;
+    row-gap: 15px;
+}
+.content {
+    background-color: blue;
+    width: auto;
+    height: 300px;
+}
+@media (min-width: 768px) {
+    .wrap {
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 15px;
+    }
+    .content {
+        background-color: blue;
+        width: auto;
+        height: 300px;
+    }
+}

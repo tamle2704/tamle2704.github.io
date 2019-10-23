@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bài 7</title>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/style7.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="sidebar">
+            <div class="logo">
+                <h4>LOGO</h4>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Menu1</a></li>
+                    <li><a href="#">Menu2</a></li>
+                    <li><a href="#">Menu3</a></li>
+                    <div class="form">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    </div>
+                </ul>
+                <div class="icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+        <div class="container"></div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var nut = document.querySelector('div.icon i');
+            var mobile = document.querySelector('ul');
+            nut.addEventListener('click', function () {
+                mobile.classList.toggle('active');
+            })
+        })</script>
+</body>
+
+</html>
