@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Car</title>
+    <meta charset="Utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="sidebar">
+                <nav>
+                    <a href="#" class="logo">DreamCars</a>
+                    <ul>
+                        <li><a href="#">Search Cars</a></li>
+                        <li><a href="#">Buyer Tips</a></li>
+                        <li><a href="#">Finance</a></li>
+                        <li><a href="#">Sign In</a></li>
+                        <li class="sign-up"><a href="#">Sign Up</a></li>
+
+                    </ul>
+                    <div class="icon">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+            <div class="search">
+                <h1>Find Your Dream Car</h1>
+                <p>Search over 20,000 pre-approved used cars and find your perfect vehicle today</p>
+                <form action="#">
+                    <input type="text" placeholder="Search make or model">
+                    <input type="text" placeholder="Postcode">
+                    <input type="submit" value="Find My Car">
+                </form>
+            </div>
+            <div class="image">
+                <img src="img/mec.png" alt="Mercedes Benz">
+            </div>
+        </header>
+        <section class="deals">
+            <div class="title">
+                <h2>Today’s Hottests Deals</h2>
+                <p>Check out the most popular cars in stock today</p>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <a href="#" class="item">
+                        <div class="image">
+                            <img src="img/Ford-Focus.png" alt="Ford Focus">
+                            <div class="price">
+                                £7,599
+                            </div>
+                        </div>
+                        <p>Ford Focus</p>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="image">
+                            <img src="img/Skoda-Fabia.png" alt="Skoda-Fabia">
+                            <div class="price">
+                                £6,500
+                            </div>
+                        </div>
+                        <p>Skoda Fabia</p>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="image">
+                            <img src="img/Honda-Civic.png" alt="Honda-Civic">
+                            <div class="price">
+                                £10,400
+                            </div>
+                        </div>
+                        <p>Honda Civic</p>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="image">
+                            <img src="img/Vauxhall-Corsa.png" alt="Vauxhall-Corsa">
+                            <div class="price">
+                                £3,999
+                            </div>
+                        </div>
+                        <p>Vauxhall Corsa</p>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="#" class="item">
+                        <div class="image">
+                            <img src="img/Renault-Clio.png" alt="Renault-Clio">
+                            <div class="price">
+                                £4,999
+                            </div>
+                        </div>
+                        <p>Renault Clio</p>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="image">
+                            <img src="img/Volkswagen-Polo.png" alt="Volkswagen-Polo">
+                            <div class="price">
+                                £1,999
+                            </div>
+                        </div>
+                        <p>Volkswagen Polo</p>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="image">
+                            <img src="img/Seat-Ibiza.png" alt="Seat-Ibiza">
+                            <div class="price">
+                                £6,850
+                            </div>
+                        </div>
+                        <p>Seat Ibiza</p>
+                    </a>
+                    <a href="#" class="item">
+                        <div class="image">
+                            <img src="img/bmw.png" alt="Bmw-i5">
+                            <div class="price">
+                                £8,950
+                            </div>
+                        </div>
+                        <p>Bmw i5</p>
+                    </a>
+                </div>
+            </div>
+            <a href="#" class="button">VIEW ALL TODAY'S DEALS</a>
+        </section>
+        <section class="tips">
+            <div class="title">
+                <h2>Our Top Buying Tips</h2>
+                <p>Make sure you make the right choice picking a car</p>
+            </div>
+            <div class="content2">
+                <a href="#">
+                    <img src="img/1.png" alt="Our Buyers Check List">
+                    <div>Our Buyers Check List</div>
+                </a>
+                <a href="#">
+                    <img src="img/2.png" alt="How To Spot Fraud">
+                    <div>How To Spot Fraud</div>
+                </a>
+                <a href="#">
+                    <img src="img/3.png" alt="Best Used Cars 2018">
+                    <div>Best Used Cars 2018</div>
+                </a>
+            </div>
+            <a href="#" class="button">SEE ALL OUR GUIDES</a>
+        </section>
+        <section class="email">
+            <h2>Never Miss A Message</h2>
+            <p>Join our exclusive list for one off deals and more</p>
+            <form action="#">
+                <input type="email" placeholder="Enter your email address..">
+                <input type="submit" value="Sign Me Up">
+            </form>
+        </section>
+        <footer>
+            <div class="final">
+                <a href="#" class="logo-home">
+                    DreamCars
+                </a>
+                <div class="menu">
+                    <a href="#">Search Cars</a>
+                    <a href="#">Buyer Tips</a>
+                    <a href="#">Finance</a>
+                </div>
+            </div>
+        </footer>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var nut = document.querySelector('div.icon i');
+                var mobile = document.querySelector('ul');
+                nut.addEventListener('click', function () {
+                    mobile.classList.toggle('active');
+                })
+            })
+        </script>
+    </div>
+</body>
+
+</html>
