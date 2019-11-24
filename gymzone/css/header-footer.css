@@ -1,0 +1,109 @@
+.page-wrapper {
+    overflow: hidden;
+}
+.container {
+    max-width: 1280px;
+}
+.container-fluid {
+    padding: 0;
+}
+header {
+    background-color: #0F0E0E;
+}
+.menu-top > .container {
+    display: flex;
+    justify-content: space-between;
+}
+header .menu-top {
+    border-bottom: 2px solid #d92329;
+    padding: 10px 0;
+}
+.menu-down {
+    padding: 10px;
+}
+.nav-item {
+    text-transform: uppercase;
+}
+.new-header {
+    margin-bottom: 30px;
+}
+.new-header > h2 {
+    font-weight: bold;
+    font-size: 24px;
+}
+hr {
+    width: 150px;
+    height: 3px;
+    background: #d92329;
+    margin: 20px auto;
+}
+.course, .about-us, .trainer, .promo, .story, .registration, .highlight, .banner, .different, .counter, .value, .client {
+    margin-bottom: 50px;
+}
+.banner {
+    height: 640px;
+}
+@media (max-width: 480px) and (min-width: 320px) {
+    .banner {
+        height: 340px;
+    }
+}
+@media (max-width: 767px) and (min-width: 481px) {
+    .banner {
+        height: 360px;
+    }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+    .banner {
+        height: 400px;
+    }
+}
+@media (max-width: 1280px) and (min-width: 1024px) {
+    .banner {
+        height: 500px;
+    }
+}
+.registration {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(../img/promo/registration.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+footer {
+    background-color: #0F0E0E;
+}
+footer .menu-top {
+    padding: 10px;
+    border-top: 2px solid #d92329;
+}
+#button {
+    display: inline-block;
+    background-color: #d92329;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }

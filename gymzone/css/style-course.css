@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.item {
+    margin-top: 20px;
+}
+
+.current {
+    background-color: #d92329;
+    color: white;
+}
+.box-schedule {
+    padding: 30px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #f8e6ff;
+    border: 1px solid black;
+}
+.icon {
+    width: 80px;
+    margin-bottom: 20px !important;
+    margin: 0 auto;
+    text-align: center;
+}
+.time {
+    font-size: 20px;
+    margin: auto;
+    width: 70%;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+.schedule-content h2 {
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+    color: #322b40;
+    display: block;
+    letter-spacing: 0.5px;
+    margin: 20px auto;
+}
+.trainer-name {
+    color: #d92329;
+    font-size: 18px;
+    font-weight: 600;
+}
+.time, .trainer-name {
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
