@@ -9,22 +9,226 @@
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" type="text/css" href="./vendor/bootstrap/css/bootstrap.min.css" />
     <!-- Owlcarousel CSS-->
-    <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" type="text/css" href="./vendor/fontawesome/css/all.css" />
     <link rel="stylesheet" type="text/css" href="css/header-footer.css" />
-    <link rel="stylesheet" type="text/css" href="css/style-page.css" />
+    <link rel="stylesheet" type="text/css" href="css/style-contact.css" />
     <title>GYMZONE</title>
 </head>
+
 <body>
-            
+    <div class="page-wrapper">
+        <header class="container-fluid fixed-top">
+            <div class="menu">
+                <nav class=" container clearfix navbar navbar-expand-xl navbar-dark">
+                    <a class="navbar-brand font-weight-bold" href="index.html"><img class="img-fluid" alt="logo"
+                            src="./img/logo.png"></a>
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="./index.html">Trang chủ
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./about.html">Về chúng tôi</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="./course.html">Dịch vụ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./schedule.html">Lịch tập</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./contact.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-danger" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            ĐĂNG KÝ TẬP THỬ
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="banner"
+            style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/banner/banner-contact.jpg) no-repeat center center; background-size: cover;">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="item col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="address-box">
+                            <div class="logo">
+                                <img class="img-fluid m-auto" src="./img/icon/house.png">
+                            </div>
+                            <div class="text">
+                                <h3>Khu đô thị Sài Đồng, quận Long Biên, Hà Nội </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="contact-box">
+                            <div class="logo">
+                                <img class="img-fluid m-auto" src="./img/icon/contact.png">
+                            </div>
+                            <div class="text">
+                                <h3>098.552.1108</h3>
+                                <h3>Gymzone@gmail.com</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="open-box">
+                            <div class="logo">
+                                <img class="img-fluid m-auto" src="./img/icon/open.png">
+                            </div>
+                            <div class="text">
+                                <h3>Khu đô thị Sài Đồng, quận Long Biên, Hà Nội </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8205194853354!2d105.91028991538973!3d21.03986629277393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a90599b26d9f%3A0x2a187d389c81333e!2sArmy%20Fitness%20%26%20yoga!5e0!3m2!1svi!2s!4v1574697863321!5m2!1svi!2s"
+                            width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-12 col-sm-12 col-lg-6">
+                        <div class="ima-form">
+                            <img class="w-100" src="./img/form-img.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-12 col-sm-12 col-lg-6">
+                        <div class="form-reg">
+                            <div class="new-header ">
+                                <h2>THAM GIA CÙNG CHÚNG TÔI</h2>
+                                <hr>
+                            </div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="Name">Họ và tên</label>
+                                    <input type="name" class="form-control" id="Name" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Email1">Email</label>
+                                    <input type="email" class="form-control" id="Email1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Số điện thoại</label>
+                                    <input type="phone" class="form-control" id="phone" placeholder="Phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for=" Email1msg">Message:</label>
+                                    <textarea class="form-control" rows="5"></textarea>
+
+                                </div>
+                            
+                                <button type="submit" class="btn btn-danger">Đăng ký</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container-fluid">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="logo col-md-3 col-12 text-md-left text-center">
+                        <a class="navbar-brand text-center font-weight-bold text-white" href="#"><img class="img-fluid"
+                                alt="logo" src="./img/logo.png"></a>
+                    </div>
+                    <div class="footer-link col-md-9 col-12">
+                        <div
+                            class="footer-menu d-flex justify-content-md-end align-items-center flex-md-row flex-column">
+                            <a class="link-footer text-white" href="./faqs.html">Câu hỏi thường gặp</a>
+                            <a class="link-footer text-white" href="./rules.html">Điều khoản</a>
+                            <a class="link-footer text-white" href="./policy.html">Chính sách</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a id="button"><i class='far fa-arrow-alt-circle-up'></i></a>
+        </footer>
+        <div class="container-fluid last-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 content-footer">
+                        <a class="text-white" href="tel:+84985521108" target="_blank">Hotline: 0985521108</a>
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a href="https://www.instagram.com/obostadium/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.pinterest.com/">
+                                <i class="fab fa-pinterest-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script type="text/javascript" src="./vendor/jquery/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Slick JS-->
-    <script type="text/javascript" src="./vendor/owlcarousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="./vendor/slick/slick.js"></script>
     <!--Main-->
     <script type="text/javascript" src="./js/main.js"></script>
 </body>

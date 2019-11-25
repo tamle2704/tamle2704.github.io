@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+.contact .row {
+    justify-content: center;
+}
+.logo {
+    margin: 1.5rem 0;
+}
+.logo > img {
+    max-width: 85px;
+    display: block;
+}
+.text {
+    text-align: center;
+    word-wrap: break-word;
+}
+.text h3 {
+    white-space: pre-wrap;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+}
+.address-box, .contact-box, .open-box {
+    border: 1px solid #d92329;
+    border-radius: 15px;
+    height: 280px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+.form-reg {
+    padding: 2rem 0;
+}
+.new-header {
+    margin-bottom: 30px;
+}
+.new-header > h2 {
+    font-weight: bold;
+    font-size: 24px;
+}
+hr {
+    width: 150px;
+    height: 3px;
+    background: #d92329;
+    margin: 20px 0;
+}
+.form, .map, .contact {
+    margin-bottom: 3rem;
+}
+

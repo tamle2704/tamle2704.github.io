@@ -17,6 +17,9 @@ header {
     text-transform: uppercase;
     font-weight: bold;
 }
+.navbar-brand {
+    margin: 0;
+}
 .active a {
     color: #d92329 !important;
     border-bottom: 1px solid #d92329;
@@ -37,8 +40,8 @@ hr {
     background: #d92329;
     margin: 20px auto;
 }
-.course, .about-us, .trainer, .promo, .story, .registration, .highlight, .banner, .different, .counter, .value, .client, .carousel {
-    margin-bottom: 50px;
+.course, .about-us, .trainer, .promo, .story, .highlight, .banner, .different, .counter, .value, .client, .carousel-index, .blog {
+    margin-bottom: 3rem;
 }
 .banner {
     height: 640px;
@@ -127,9 +130,8 @@ footer .row {
     opacity: 1;
     visibility: visible;
 }
-.carousel .slick-dots{
-    bottom: 10%;
-    display: none !important;
+.carousel-index .slick-dots{
+    bottom: -5%;
 }
 .banner-index .slick-slide {
     margin: 0;
@@ -146,6 +148,9 @@ footer .row {
     left: 2%;
     z-index: 99;
     color: #d92329;
+}
+.carousel-index .slick-prev:before, .carousel-index .slick-next:before {
+    color: white;
 }
 .slick-prev:before, .slick-next:before{
     line-height: 0;
