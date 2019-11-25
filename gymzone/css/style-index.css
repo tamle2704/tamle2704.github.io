@@ -13,7 +13,30 @@ a:hover {
     text-decoration: none;
 }
 .wrap {
-    height: 121px;
+    height: 76px;
+}
+.carousel-index .col-md-12 {
+    padding: 0;
+}
+.item {
+    position: relative;
+    border-radius: 5px;
+}
+.title-course {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0px 0px 0px -50% ;
+    padding: 0 30px;
+}
+.name-course {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: white;
 }
 .btn-red {
     background-color: #d92329;
@@ -52,6 +75,28 @@ a:hover {
     line-height: 28px;
     margin-bottom: 40px;
 }
+.content-trainer {
+    position: absolute;
+    bottom: -300px;
+    margin: 0;
+    left: 0;
+    background: #E5E5E5;
+    transition: .5s all;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px;
+}
+.experience {
+    list-style: none;
+    text-align: left;
+}
+.experience li {
+    margin: 1rem 0;
+}
+.item:hover .content-trainer {
+    bottom: 0;
+    
+}
 .promo {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/promo/promo.jpg);
     background-repeat: no-repeat;
@@ -83,3 +128,5 @@ a:hover {
 .link-footer {
     margin: 10px 20px;
 }
+
+
