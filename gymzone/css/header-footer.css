@@ -180,3 +180,9 @@ footer .row {
     color: black;
     opacity: 1;
 }
+.title-banner {
+    padding-top: 10rem;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+}
