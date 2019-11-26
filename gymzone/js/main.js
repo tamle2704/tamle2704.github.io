@@ -5,7 +5,6 @@ $('.banner-index').slick({
     autoplaySpeed: 7000,
     pauseOnHover: false,
     speed: 1000,
-    dots: true,
     arrows: true
 });
 $('.trainer-slide').slick({
