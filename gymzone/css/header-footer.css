@@ -28,7 +28,7 @@ header {
     color: #d92329 !important;
 }
 .new-header {
-    margin-bottom: 30px;
+    margin-bottom: 2.5rem !important;
 }
 .new-header > h2 {
     font-weight: bold;
@@ -41,7 +41,7 @@ hr {
     margin: 20px auto;
 }
 .course, .about-us, .trainer, .promo, .story, .highlight, .banner, .different, .counter, .value, .client, .carousel-index, .blog {
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
 }
 .banner {
     height: 640px;
@@ -181,8 +181,34 @@ footer .row {
     opacity: 1;
 }
 .title-banner {
-    padding-top: 10rem;
+    padding-top: 300px;
     text-align: center;
-    font-size: 80px;
+    font-size: 90px;
     color: white;
+    font-style: normal;
+    font-weight: bold;
 }
+@media (max-width: 1280px) and (min-width: 1024px){
+    .title-banner {
+        font-size: 80px;
+        padding-top: 220px;
+    }   
+}
+@media (max-width: 1023px) and (min-width: 768px){
+    .title-banner {
+        font-size: 60px;
+        padding-top: 200px;
+    }   
+}
+@media (max-width: 767px) and (min-width: 481px){
+    .title-banner {
+        font-size: 45px;
+        padding-top: 180px;
+    }
+}   
+@media (max-width: 480px) and (min-width: 210px){
+    .title-banner {
+        font-size: 35px;
+        padding-top: 160px;
+    }
+}  

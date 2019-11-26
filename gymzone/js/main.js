@@ -68,10 +68,28 @@ $('.blog-new').slick({
 });
 $('.client-say').slick({
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 3,
-    dots: true,
-    arrows: true
+    arrows: true,
+    responsive: [
+        {
+            breakpoint: 1000,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '20px',
+                slidesToShow: 1
+            }
+        }]
 });
 $('.images').slick({
     infinite: true,
