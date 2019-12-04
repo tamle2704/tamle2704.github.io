@@ -57,7 +57,7 @@ a:hover {
 }
 .content-p {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 40px;
@@ -110,7 +110,7 @@ a:hover {
   
 .box-trainer:hover .content {
     width: 100%;
-    height: 50%;
+    height: 60%;
     bottom: 0;
     left: 0;
 }
@@ -138,4 +138,72 @@ a:hover {
 .box-trainer:hover .content p {
     opacity: 1;
     transition-delay: 0.5s;
+}
+.card-set .title-card {
+    font-size: 22px !important;
+    font-weight: bold;
+}
+.testimonial-reel {
+    margin-bottom: 2rem !important;
+}
+.testimonial-reel .box {
+    position: relative;
+    margin-bottom: 30px;
+}
+.testimonial-reel .box .image {
+    margin: 0 auto -45px;
+    text-align: center;
+}
+.testimonial-reel .box .image img {
+    height: 130px;
+    margin: 0 auto;
+}
+.testimonial-reel .box .test-component {
+    background-color: #fff;
+    padding: 1rem 2.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    min-height: 200px;
+}
+.testimonial-reel .box .test-title {
+    color: #d92329;
+    text-align: center;
+    margin-top: 3.3rem;
+    margin-bottom: 15px;
+}
+.testimonial-reel .box .test-content {
+    text-align: center;
+    font-size: 18px;
+}
+.testimonial-reel .slick-slide {
+    opacity: 0.3;
+    transition: opacity 0.3s;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.testimonial-reel .slick-cloned {
+    opacity: 0.3;
+    transition: opacity 0.3s;
+}
+
+.testimonial-reel .slick-current.slick-active {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.more-picture .modal-body {
+    max-width: 1500px;
+    padding: 10px;
+    background: none;
+}
+.more-picture .modal-dialog {
+    max-width: 1200px;
+}
+.more-picture .modal-body button.close {
+    top: -10px;
+    right: -10px;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    color: black;
 }

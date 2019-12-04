@@ -9,22 +9,417 @@
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" type="text/css" href="./vendor/bootstrap/css/bootstrap.min.css" />
     <!-- Owlcarousel CSS-->
-    <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" type="text/css" href="./vendor/fontawesome/css/all.css" />
     <link rel="stylesheet" type="text/css" href="css/header-footer.css" />
-    <link rel="stylesheet" type="text/css" href="css/style-page.css" />
-    <title>GYMZONE</title>
+    <link rel="stylesheet" type="text/css" href="css/style-blog.css" />
+    <title>Bài tập nam</title>
+    <link rel="shortcut icon" type="image/png" href="./img/icon/favicon.png" />
 </head>
+
 <body>
-            
+    <div class="page-wrapper">
+        <header class="container-fluid fixed-top">
+            <div class="menu">
+                <nav class=" container clearfix navbar navbar-expand-xl navbar-dark">
+                    <a class="navbar-brand font-weight-bold" href="index.html"><img class="img-fluid" alt="logo"
+                            src="./img/logo.png"></a>
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="./index.html">Trang chủ
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="./about.html">Về chúng tôi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./course.html">Dịch vụ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./schedule.html">Lịch tập</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-danger" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            ĐĂNG KÝ TẬP THỬ
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        <div class="form-inner">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="input-group-wrapper">
+                                            <div class="headline input-group">
+                                                <h2>
+                                                    <span>ĐĂNG KÝ</span> <br class="hidden-xs">
+                                                    TẬP THỬ MIỄN PHÍ
+                                                </h2>
+                                                <p><span class="line-short"></span></p>
+                                                <p>Hãy nhanh tay đăng ký để được trải nghiệm trung <br
+                                                        class="hidden-xs"> tâm gần nhất và nhận tư vấn miễn phí về dịch
+                                                    <br class="hidden-xs">vụ tại Gymzone &amp; Fitness!</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-group-wrapper">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Họ tên"
+                                                    aria-describedby="basic-addon1" name="name" id="txtName" required=""
+                                                    data-msg-required="Xin vui lòng nhập tên" aria-required="true">
+                                            </div>
+                                            <div class="input-group">
+                                                <input name="custom_phone_mobile" type="tel" value="" id="txtPhone"
+                                                    class="form-control" placeholder="Số ĐT"
+                                                    aria-describedby="basic-addon1" required=""
+                                                    data-msg-required="Xin vui lòng nhập số điện thoại"
+                                                    data-rule-vnphone="true" data-msg-vnphone="Số ĐT từ 10-11 chữ số."
+                                                    aria-required="true">
+                                            </div>
+                                            <div class="input-group">
+                                                <select name="custom_city_selection_july2015" required=""
+                                                    data-msg-required="Xin vui lòng chọn khu vực sống"
+                                                    class="form-control valid" aria-required="true"
+                                                    aria-invalid="false">
+                                                    <option value="-">Chọn khu vực bạn sống</option>
+                                                    <option value="01-Thành phố Hà Nội">Hà Nội</option>
+                                                    <option value="79-Thành phố Hồ Chí Minh">Hồ Chí Minh</option>
+                                                    <option value="T.P Biên Hòa">T.P Biên Hòa</option>
+                                                    <option value="74-Tỉnh Bình Dương">T.P Bình Dương</option>
+                                                    <option value="48-Thành phố Đà Nẵng">Đà Nẵng</option>
+                                                    <option value="Nha Trang">Nha Trang</option>
+                                                    <option value="92-Thành phố Cần Thơ">Cần Thơ</option>
+                                                    <option value="Vũng Tàu">Vũng Tàu</option>
+                                                </select> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="input-group-wrapper">
+                                            <div class="input-group btn-center">
+                                                <button type="submit" id="cta_signup_form" data_ceid="cta_signup_form"
+                                                    value="Đăng ký ngay" class="btn btn-danger btn-regis">ĐĂNG KÝ NGAY
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="banner"
+            style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/banner/banner-blog.jpg) no-repeat center top; background-size: cover;">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="title-banner">BLOG</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-8 blog-left">
+                        <div class="category-tag">
+                            <p>BÀI TẬP NAM</p>
+                        </div>
+                        <div class="post-title">
+                            <h1>TOP 5 BÀI TẬP NGỰC SĂN CHẮC CHO NAM TẬP THỂ HÌNH TỐT NHẤT</h1>
+                        </div>
+                        <div class="social-share-blog">
+
+                        </div>
+                        <p class="text-justify"><strong><em>Sở hữu vòm ngực săn chắc luôn là mong muốn của rất nhiều
+                                    cánh mày râu. Thực hiện đúng các bài
+                                    tập ngực trong quá trình tập thể hình sẽ biến mong ước của các chàng trở thành hiện
+                                    thực.
+                                    Cùng California Fitness tìm hiểu 5 bài tập ngực săn chắc cho nam tập thể hình tốt
+                                    nhất qua
+                                    nội dung bài viết sau đây nhé.</em></strong>
+                        </p>
+                        <h2 class="text-justify"><strong>Top 5 bài tập ngực săn chắc cho nam tập thể hình</strong></h2>
+                        <p class="text-justify"><strong><em>Đẩy tạ trên ghế nghiêng</em></strong></p>
+                        <p class="text-justify">Đây là 1 trong 5 bài tập ngực dành cho nam mang đến tác dụng săn
+                            chắc được dân Gymer yêu thích nhất. Bài tập tác động trực tiếp và liên tục đến vùng ngực.
+                            Với bài tập này bạn cần hít sâu nhằm kéo căng vòng ngực, ngoài ra bài tập này cũng mang đến
+                            tác dụng tăng sức mạnh và độ săn chắc cho cánh tay và vai.&nbsp;
+                        </p>
+                        <p class="text-center"><img class="w-100" alt="Bài tập ngực" src="./img/blog/post1.jpg"><em>Bài
+                                tập ngực săn chắc cho nam - Đẩy tạ trên ghế
+                                nghiêng (Nguồn ảnh: Internet)</em>
+                        </p>
+                        <p class="text-jusify">Cách thực hiện:</p>
+                        <ul>
+                            <li class="text-jusify">Chuẩn bị ở tư thế chống đẩy với mũi chân đặt trên ghế,
+                                người hướng xuống dưới</li>
+                            <li class="text-jusify">Thực hiện động tác chống đẩy liên tục với cường độ trung
+                                bình và nhanh 10 cái</li>
+                            <li class="text-jusify">Lặp lại động tác từ 30 đến 40 lần</li>
+                        </ul>
+                        <p class="text-jusify"><strong><em>Tập ngực nở cho nam đẩy tạ đơn</em></strong></p>
+
+                        <p class="text-jusify">Đây là bài tập ngực dành cho nam thể hình cần dùng đến các dụng
+                            cụ hỗ trợ như thanh đòn và bánh tạ, ghế tập có chức năng dốc lên. Bài tập này tác động chính
+                            đến nhóm cơ vùng ngực và các nhóm cơ phụ như bả vai, bắp tay sau, ngực dưới. Với bài tập này
+                            vòm ngực sẽ được rèn luyện trở nên khỏe mạnh hơn.&nbsp;</p>
+
+                        <p class="text-center"><img alt="Bài tập ngực" src="./img/blog/post2.jpg" class="w-100"><em>Bài
+                                tập
+                                ngực săn chắc cho nam - Đẩy tạ đơn (Nguồn ảnh: Internet)</em></p>
+
+                        <p class="text-jusify">Cách thực hiện:&nbsp;</p>
+
+                        <ul>
+                            <li class="text-jusify">Chuẩn bị ở tư thế nằm ngửa trên ghế tập tạ dốc lên, tay nắm
+                                thanh đòn, tay dang rộng vừa phải, chân đặt trên sàn, nâng tạ ra khỏi giá, giữ thẳng ở
+                                phía trên</li>
+                            <li class="text-jusify">Hít vào, từ từ hạ đòn tạ xuống gần chạm với ngực</li>
+                            <li class="text-jusify">Để nguyên tư thế khoảng 2 giây ở vị trí thấp nhất</li>
+                            <li class="text-jusify">Đẩy tạ lại tư thế chuẩn bị thở ra để nguyên tư thế 2 giây
+                            </li>
+                            <li class="text-jusify">Lặp lại động tác từ 20 đến 30 phút mỗi lần tập</li>
+                        </ul>
+
+                        <p class="text-jusify"><strong><em>Bài tập Burpee</em></strong></p>
+
+                        <p class="text-jusify">Burpees là bài tập ngực mang đến tác dụng tốt cho cả bên trong
+                            và bên ngoài. Bài tập này giúp săn chắc và tăng sinh cơ vòm ngực cũng như tốt cho tim mạch.
+                            Burpees mang đến tác dụng tốt trong việc đốt cháy mỡ thừa tại vùng ngực, nách cánh
+                            tay.&nbsp;</p>
+
+                        <p class="text-center"><img alt="Bài tập ngực" src="./img/blog/post3.jpg" class="w-100"><em>Bài
+                                tập
+                                ngực săn chắc cho nam - Burpee (Nguồn ảnh: Internet)</em></p>
+
+                        <p class="text-jusify">Cách thực hiện:</p>
+
+                        <ul>
+                            <li class="text-jusify">Chuẩn bị ở tư thế đứng thẳng, chân rộng bằng vai</li>
+                            <li class="text-jusify">Hạ người về tư thế Squat gót chân hơi nhấc, 2 tay chống
+                                trên sàn</li>
+                            <li class="text-jusify">Nhún người, đưa 2 chân về phía sau ở tư thế hít đất</li>
+                            <li class="text-jusify">Thực hiện một lần hít đất</li>
+                            <li class="text-jusify">Thu chân về ở tư thế nhảy cóc, bật lên cao hết mức có thể
+                            </li>
+                            <li class="text-jusify">Trở lại tư thế chuẩn bị, lặp lại động tác từ 15 đến 20 lần
+                            </li>
+                        </ul>
+
+                        <h2 class="text-jusify"><strong>Sở hữu cơ ngực săn chắc với các lớp tập gym tại
+                                Gymzone</strong></h2>
+
+                        <p class="text-jusify">Để được hướng dẫn một cách chính xác các bài tập ngực bạn có thể
+                            đến trực tiếp trung tâm thể hình California Fitness. Chúng tôi cung cấp các lớp luyện tập
+                            Gym chuyên nghiệp đẳng cấp Quốc tế 5 sao mang đến sự hài lòng và hiệu quả tối ưu cho khách
+                            hàng. Đến với California Fitness bạn sẽ được hưởng các ưu đãi hấp dẫn với chất lượng dịch vụ
+                            tốt nhất.&nbsp;</p>
+
+                        <p class="text-center"><img alt="Bài tập ngực" src="./img/blog/post4.jpg" class="w-100"><em>Sở
+                                hữu
+                                cơ ngực săn chắc với các bài tập ngực tại Gymzone (Nguồn ảnh: California
+                                Fitness)</em></p>
+
+                        <p class="text-jusify">Tại Gymzone bạn có thể tham gia các lớp tập Gym tại
+                            các cơ sở trải dài trên cả nước vào mọi thời gian rảnh của mình. Chúng tôi mang đến không
+                            gian phòng tập sang trọng, thoải mái với trang thiết bị tiên tiến hiện đại cùng lịch tập
+                            khoa học, thông minh. Bạn có thể lựa chọn các hình thức và bài tập Gym phù hợp với mục đích
+                            tăng - giảm cân, rèn luyện hình thể và sức khỏe tại Gymzone. Chúng tôi cung cấp
+                            dịch vụ luyện tập Gym với PT cá nhân hoặc tập luyện tập thể.</p>
+
+                        <p class="text-jusify">Gymzone vừa mang đến các bài tập ngực dành cho nam
+                            được dân thể hình yêu thích nhất qua bài viết trên đây. Đừng quên bạn có thể trực tiếp trải
+                            nghiệm chất lượng luyện tập Quốc tế tại Việt Nam qua các lớp tập luyện Gym tại Gymzone. Liên
+                            hệ ngay với chúng tôi qua qua hotline 18006995 hoặc <a
+                                href="https://www.facebook.com"><strong>inbox fanpage</strong></a> để nhận các ưu
+                            đãi hấp dẫn ngay hôm nay.</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 blog right">
+                        <div class="search-box col-12">
+                            <h3 class="title-right">TÌM KIẾM:</h3>
+                            <div class="form-group has-search">
+                                <span class="fa fa-search form-control-feedback"></span>
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </div>
+                        <article class="categories-blog col-12">
+                            <h3 class="title-right">THỂ LOẠI:</h3>
+                            <ul class="categories">
+                                <li class="list"><a class="text-dark" href="#">Yoga</a></li>
+                                <li class="list"><a class="text-dark" href="#">Giảm cân</a></li>
+                                <li class="list"><a class="text-dark" href="#">Group-X</a></li>
+                                <li class="list"><a class="text-dark" href="#">Bài tập nữ</a></li>
+                                <li class="list"><a class="text-dark" href="#">Bài tập nam</a></li>
+                                <li class="list"><a class="text-dark" href="#">Dinh dưỡng</a></li>
+                            </ul>
+                        </article>
+                        <article class="recent-post col-12">
+                            <h3 class="title-right">BÀI VIẾT GẦN ĐÂY:</h3>
+                            <div class="post-box">
+                                <div class="post-img">
+                                    <a href="#"><img class="img-fluid" src="./img/blog/recent-post1.png"></a>
+                                </div>
+                                <div class="post-title">
+                                    <a class="text-dark" href="#">
+                                        <h4>TẬP THỂ THAO NÊN CHỌN TAI NGHE NÀO?</h4>
+                                    </a>
+                                    <p><a class="text-dark" href="#">20/11/2019</a></p>
+                                </div>
+                            </div>
+                            <div class="post-box">
+                                <div class="post-img">
+                                    <a href="#"><img class="img-fluid" src="./img/blog/recent-post2.png"></a>
+                                </div>
+                                <div class="post-title">
+                                    <a class="text-dark" href="#">
+                                        <h4>7 động tác tập tại nhà giúp căng giãn cơ</h4>
+                                    </a>
+                                    <p><a class="text-dark" href="#">20/11/2019</a></p>
+                                </div>
+                            </div>
+                            <div class="post-box">
+                                <div class="post-img">
+                                    <a href="#"><img class="img-fluid" src="./img/blog/recent-post3.png"></a>
+                                </div>
+                                <div class="post-title">
+                                    <a class="text-dark" href="#">
+                                        <h4>Thay đổi thói quen nhỏ để giảm cân nhanh chóng</h4>
+                                    </a>
+                                    <p><a class="text-dark" href="#">20/11/2019</a></p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="tag-box col-12">
+                            <h3 class="title-right">TAG:</h3>
+                            <ul class="tags">
+                                <li><a href="#">Yoga</a></li>
+                                <li><a href="#">Nam</a></li>
+                                <li><a href="#">nữ</a></li>
+                                <li><a href="#">Dinh dưỡng</a></li>
+                                <li><a href="#">giảm cân</a></li>
+                                <li><a href="#">Gym</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="preference">
+            <div class="container">
+                <div class="new-header text-center">
+                    <h2>ƯU ĐÃI ĐẶC BIỆT</h2>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4 item">
+                        <a href="./promo.html">
+                            <img class="w-100" src="./img/promo/promo1.png">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 item">
+                        <a href="./promo.html">
+                            <img class="w-100" src="./img/promo/promo2.png">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 item">
+                        <a href="./promo.html">
+                            <img class="w-100" src="./img/promo/promo3.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="registration">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="m-auto">
+                        <a data-toggle="modal" data-target="#exampleModalCenter" class="text-center" href=""><img
+                                class="w-100" src="./img/promo/registration.png" /></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container-fluid">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="logo col-md-3 col-12 text-md-left text-center">
+                        <a class="navbar-brand text-center font-weight-bold text-white" href="#"><img class="img-fluid"
+                                alt="logo" src="./img/logo.png"></a>
+                    </div>
+                    <div class="footer-link col-md-9 col-12">
+                        <div
+                            class="footer-menu d-flex justify-content-md-end align-items-center flex-md-row flex-column">
+                            <a class="link-footer text-white" href="#">Câu hỏi thường gặp</a>
+                            <a class="link-footer text-white" href="#">Điều khoản</a>
+                            <a class="link-footer text-white" href="#">Chính sách</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a id="button"><i class='far fa-arrow-alt-circle-up'></i></a>
+        </footer>
+        <div class="container-fluid last-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 content-footer">
+                        <a class="text-white" href="tel:+84985521108" target="_blank">Hotline: 0985521108</a>
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a href="https://www.instagram.com/obostadium/">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.pinterest.com/">
+                                <i class="fab fa-pinterest-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script type="text/javascript" src="./vendor/jquery/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- Slick JS-->
-    <script type="text/javascript" src="./vendor/owlcarousel/owl.carousel.js"></script>
+    <script type="text/javascript" src="./vendor/slick/slick.js"></script>
     <!--Main-->
     <script type="text/javascript" src="./js/main.js"></script>
 </body>

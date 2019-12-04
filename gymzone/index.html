@@ -68,14 +68,70 @@
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
                     <div class="modal-body">
-                        ...
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        <div class="form-inner">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="input-group-wrapper">
+                                            <div class="headline input-group">
+                                                <h2>
+                                                    <span>ĐĂNG KÝ</span> <br class="hidden-xs">
+                                                    TẬP THỬ MIỄN PHÍ
+                                                </h2>
+                                                <p><span class="line-short"></span></p>
+                                                <p>Hãy nhanh tay đăng ký để được trải nghiệm trung <br
+                                                        class="hidden-xs"> tâm gần nhất và nhận tư vấn miễn phí về dịch
+                                                    <br class="hidden-xs">vụ tại Gymzone &amp; Fitness!</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-group-wrapper">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Họ tên"
+                                                    aria-describedby="basic-addon1" name="name" id="txtName" required=""
+                                                    data-msg-required="Xin vui lòng nhập tên" aria-required="true">
+                                            </div>
+                                            <div class="input-group">
+                                                <input name="custom_phone_mobile" type="tel" value="" id="txtPhone"
+                                                    class="form-control" placeholder="Số ĐT"
+                                                    aria-describedby="basic-addon1" required=""
+                                                    data-msg-required="Xin vui lòng nhập số điện thoại"
+                                                    data-rule-vnphone="true" data-msg-vnphone="Số ĐT từ 10-11 chữ số."
+                                                    aria-required="true">
+                                            </div>
+                                            <div class="input-group">
+                                                <select name="custom_city_selection_july2015" required=""
+                                                    data-msg-required="Xin vui lòng chọn khu vực sống"
+                                                    class="form-control valid" aria-required="true"
+                                                    aria-invalid="false">
+                                                    <option value="-">Chọn khu vực bạn sống</option>
+                                                    <option value="01-Thành phố Hà Nội">Hà Nội</option>
+                                                    <option value="79-Thành phố Hồ Chí Minh">Hồ Chí Minh</option>
+                                                    <option value="T.P Biên Hòa">T.P Biên Hòa</option>
+                                                    <option value="74-Tỉnh Bình Dương">T.P Bình Dương</option>
+                                                    <option value="48-Thành phố Đà Nẵng">Đà Nẵng</option>
+                                                    <option value="Nha Trang">Nha Trang</option>
+                                                    <option value="92-Thành phố Cần Thơ">Cần Thơ</option>
+                                                    <option value="Vũng Tàu">Vũng Tàu</option>
+                                                </select> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="input-group-wrapper">
+                                            <div class="input-group btn-center">
+                                                <button type="submit" id="cta_signup_form" data_ceid="cta_signup_form"
+                                                    value="Đăng ký ngay" class="btn btn-danger btn-regis">ĐĂNG KÝ NGAY
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -90,13 +146,13 @@
                                 <img class="w-100" src="img/banner/banner.jpg" />
                             </div>
                             <div class="item-banner">
-                                <img class="w-100" src="img/banner/banner.jpg" />
+                                <img class="w-100" src="./img/banner/banner-index2.png" />
                             </div>
                             <div class="item-banner">
-                                <img class="w-100" src="img/banner/banner.jpg" />
+                                <img class="w-100" src="./img/banner/banner-index3.png" />
                             </div>
                             <div class="item-banner">
-                                <img class="w-100" src="img/banner/banner.jpg" />
+                                <img class="w-100" src="./img/banner/banner-index5.png" />
                             </div>
                         </div>
                     </div>
@@ -112,51 +168,63 @@
                 </div>
                 <div class="row">
                     <div class="item col-12 col-sm-6 col-md-4 col-lg-4">
-                        <a href="#">
+                        <a href="./kickfit.html">
                             <img class="w-100" src="img/course/yoga.jpg" />
                         </a>
                         <div class="title-course">
-                            <h2 class="name-course">Yoga</h2>
+                            <a href="./kickfit.html">
+                                <h2 class="name-course">Yoga</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="item col-12 col-sm-6 col-md-4 col-lg-4">
-                        <a href="#">
+                        <a href="./kickfit.html">
                             <img class="w-100" src="img/course/giamcan.jpg" />
                         </a>
                         <div class="title-course">
-                            <h2 class="name-course">Giảm cân</h2>
+                            <a href="./kickfit.html">
+                                <h2 class="name-course">Giảm cân</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="item col-12 col-sm-6 col-md-4 col-lg-4">
-                        <a href="#">
+                        <a href="./kickfit.html">
                             <img class="w-100" src="img/course/kickfit.jpg" />
                         </a>
                         <div class="title-course">
-                            <h2 class="name-course">Kickfit</h2>
+                            <a href="./kickfit.html">
+                                <h2 class="name-course">Kickfit</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="item col-12 col-sm-6 col-md-4 col-lg-4">
-                        <a href="#">
+                        <a href="./kickfit.html">
                             <img class="w-100" src="img/course/dance.jpg" />
                         </a>
                         <div class="title-course">
-                            <h2 class="name-course">Dance</h2>
+                            <a href="./kickfit.html">
+                                <h2 class="name-course">Dance</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="item col-12 col-sm-6 col-md-4 col-lg-4">
-                        <a href="#">
+                        <a href="./kickfit.html">
                             <img class="w-100" src="img/course/hlcn.jpg" />
                         </a>
                         <div class="title-course">
-                            <h2 class="name-course">Huấn luyện cá nhân</h2>
+                            <a href="./kickfit.html">
+                                <h2 class="name-course">Huấn luyện cá nhân</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="item col-12 col-sm-6 col-md-4 col-lg-4">
-                        <a href="#">
+                        <a href="./kickfit.html">
                             <img class="w-100" src="img/course/giamcangco.jpg" />
                         </a>
                         <div class="title-course">
-                            <h2 class="name-course">Giảm căng cơ</h2>
+                            <a href="./kickfit.html">
+                                <h2 class="name-course">Giảm căng cơ</h2>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -269,11 +337,26 @@
 
         <section class="promo">
             <div class="container-fluid">
-                <a href="https://www.youtube.com/embed/AulGwjIv3m8"><img src="./img/promo/play-promo.png"
-                        class="img-promo text-center" alt=""></a>
+                <a class="video" data-toggle="modal" data-target="#videoModal"><img src="./img/promo/play-promo.png"
+                        class="img-promo text-center"></a>
                 <h2>KHÁM PHÁ CUỘC SỐNG <span class="text-danger">GYM</span> ZONE</h2>
             </div>
         </section>
+
+        <div id="videoModal" class="modal fade video-modal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button class="close" data-dismiss="modal">
+                        </button>
+                        <iframe width="100%" height="794" src="https://www.youtube.com/embed/OfhOzVnTAuw"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section class="story">
             <div class="container">
@@ -285,18 +368,13 @@
                     <div class="col-md-12">
                         <div class="stories">
                             <div class="item">
-                                <a href="#">
-                                    <img class="w-100" src="img/story/strory1.png" />
-                                </a>
+                                <img class="w-100" src="img/story/story1.png" />
                             </div>
                             <div class="item">
-                                <img class="w-100" src="img/story/strory1.png" />
+                                <img class="w-100" src="img/story/story2.png" />
                             </div>
                             <div class="item">
-                                <img class="w-100" src="img/story/strory1.png" />
-                            </div>
-                            <div class="item">
-                                <img class="w-100" src="img/story/strory1.png" />
+                                <img class="w-100" src="img/story/story3.png" />
                             </div>
                         </div>
                     </div>
@@ -475,9 +553,9 @@
                     <div class="footer-link col-md-9 col-12">
                         <div
                             class="footer-menu d-flex justify-content-md-end align-items-center flex-md-row flex-column">
-                            <a class="link-footer text-white" href="./faqs.html">Câu hỏi thường gặp</a>
-                            <a class="link-footer text-white" href="./rules.html">Điều khoản</a>
-                            <a class="link-footer text-white" href="./policy.html">Chính sách</a>
+                            <a class="link-footer text-white" href="./#">Câu hỏi thường gặp</a>
+                            <a class="link-footer text-white" href="./#">Điều khoản</a>
+                            <a class="link-footer text-white" href="./#">Chính sách</a>
                         </div>
                     </div>
                 </div>
@@ -488,7 +566,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 content-footer">
-                        <a class="text-white" href="tel:+84985521108" target="_blank">Hotline: 0985521108</a>
+                        <a class="text-white" href="tel:+84985521108" target="_blank">Hotline: 098.552.1108</a>
                         <div class="social-icon">
                             <a href="https://www.facebook.com/">
                                 <i class="fab fa-facebook-square"></i>

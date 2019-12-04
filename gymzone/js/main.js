@@ -5,7 +5,8 @@ $('.banner-index').slick({
     autoplaySpeed: 7000,
     pauseOnHover: false,
     speed: 1000,
-    arrows: true
+    arrows: true,
+    dots: false
 });
 $('.trainer-slide').slick({
     infinite: true,
@@ -34,16 +35,40 @@ $('.trainer-slide').slick({
 });
 $('.stories').slick({
     infinite: true,
+    centerMode: true,
+    centerPadding: '20px',
     slidesToShow: 1,
     slidesToScroll: 3,
-    dots: true,
-    arrows: true
+    arrows: true,
+});
+$(".testimonial-reel").slick({
+    centerMode: true,
+    centerPadding: "40px",
+    slidesToShow: 1,
+    infinite: true,
+    arrows: true,
+    lazyLoad: "ondemand",
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1,
+                centerMode: true
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
 });
 $('.blog-new').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    dots: true,
+    dots: false,
     arrows: true,
     responsive: [
         {
@@ -52,7 +77,8 @@ $('.blog-new').slick({
                 arrows: false,
                 centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 2
+                slidesToShow: 2,
+                dots: false
             }
         },
         {
@@ -61,14 +87,16 @@ $('.blog-new').slick({
                 arrows: false,
                 centerMode: true,
                 centerPadding: '20px',
-                slidesToShow: 1
+                slidesToShow: 1,
+                dots: false
             }
         }]
 });
-$('.client-say').slick({
+$('.images').slick({
     infinite: true,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 3,
+    dots: false,
     arrows: true,
     responsive: [
         {
@@ -90,13 +118,6 @@ $('.client-say').slick({
             }
         }]
 });
-$('.images').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    dots: true,
-    arrows: true
-});
 //----------------------BACK-TO-TOP-----------------------
 var btn = $('#button');
 
@@ -113,15 +134,15 @@ btn.on('click', function (e) {
     $('html, body').animate({ scrollTop: 0 }, '300');
 });
 
-// -------------------FILTER-----------------------
+// -------------------FILTER-COURSE----------------------
 $(document).ready(function () {
 
-    $(".filter-button").click(function () {
+    $(".filter-course").click(function () {
         var value = $(this).attr('data-filter');
 
         if (value == "all") {
             //$('.filter').removeClass('hidden');
-            $('.filter').show('1000');
+            $('.filter').show('3000');
         }
         else {
             //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
@@ -132,11 +153,34 @@ $(document).ready(function () {
         }
     });
 
-    if ($(".filter-button").removeClass("active")) {
-        $(this).removeClass("active");
-    }
-    $(this).addClass("active");
-
+    $('.filter-course').click(function () {
+        $('.active-button').removeClass('active-button');
+        $(this).addClass('active-button');
+    });
 });
 
-//------------HOVER CARD BLOG -----------------
+// -------------------FILTER-SCHEDULE----------------------
+$(document).ready(function () {
+
+    $(".filter-button").click(function () {
+        var value = $(this).attr('data-filter');
+
+        if (value == "monday") {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('3000');
+        }
+        else {
+            //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+            //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.' + value).hide('3000');
+            $('.filter').filter('.' + value).show('3000');
+
+        }
+    });
+
+    $('.filter-button').click(function () {
+        $('.active-button').removeClass('active-button');
+        $(this).addClass('active-button');
+    });
+});
+

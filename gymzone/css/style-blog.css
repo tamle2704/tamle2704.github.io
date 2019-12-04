@@ -29,7 +29,7 @@ a:hover {
 .blog-img {
     height: 320px;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
 }
 .date-tag {
     margin-bottom: 10px;
@@ -47,7 +47,7 @@ a:hover {
     font-size: 16px;
 }
 .title-blog {
-    font-weight: 500;
+    font-weight: 550;
 }
 .read-more {
     float: left;
@@ -68,7 +68,7 @@ a:hover {
     line-height: 28px;
 }
 .form-group input {
-    border: 1px solid #d92329;
+    border: 1px solid #BDBDBD;
 }
 .has-search .form-control {
     padding-left: 2.375rem;
@@ -90,7 +90,7 @@ ul li {
     margin: 0;
 }
 .categories {
-    border: #d92329 1px solid;
+    border: #BDBDBD 1px solid;
     border-radius: 5px;
 }
 .list a {
@@ -140,7 +140,7 @@ ul li {
     color: black;
     font-size: 14px;
     font-weight: bold;
-    border: 1px solid #d92329;
+    border: 1px solid #BDBDBD;
     text-transform: uppercase;
     padding: 6px 10px;
     border-radius: 5px;
@@ -161,4 +161,18 @@ ul li {
     align-items: center;
     justify-content: center;
     margin-top: 1.25rem;
+}
+.main-blog .post-title h1 {
+    text-transform: uppercase;
+    color: black;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+.main-blog .blog-left p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin: 15px auto;
+}
+.preference .item {
+    margin: 0px auto 1.5rem;
 }

@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/header-footer.css" />
     <link rel="stylesheet" type="text/css" href="css/style-blog.css" />
     <title>Blog</title>
-    <link rel="shortcut icon" type="image/png" href="./img/icon/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="./img/icon/favicon.png" />
 </head>
 
 <body>
@@ -67,14 +67,70 @@
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
                     <div class="modal-body">
-                        ...
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        <div class="form-inner">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="input-group-wrapper">
+                                            <div class="headline input-group">
+                                                <h2>
+                                                    <span>ĐĂNG KÝ</span> <br class="hidden-xs">
+                                                    TẬP THỬ MIỄN PHÍ
+                                                </h2>
+                                                <p><span class="line-short"></span></p>
+                                                <p>Hãy nhanh tay đăng ký để được trải nghiệm trung <br
+                                                        class="hidden-xs"> tâm gần nhất và nhận tư vấn miễn phí về dịch
+                                                    <br class="hidden-xs">vụ tại Gymzone &amp; Fitness!</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-group-wrapper">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Họ tên"
+                                                    aria-describedby="basic-addon1" name="name" id="txtName" required=""
+                                                    data-msg-required="Xin vui lòng nhập tên" aria-required="true">
+                                            </div>
+                                            <div class="input-group">
+                                                <input name="custom_phone_mobile" type="tel" value="" id="txtPhone"
+                                                    class="form-control" placeholder="Số ĐT"
+                                                    aria-describedby="basic-addon1" required=""
+                                                    data-msg-required="Xin vui lòng nhập số điện thoại"
+                                                    data-rule-vnphone="true" data-msg-vnphone="Số ĐT từ 10-11 chữ số."
+                                                    aria-required="true">
+                                            </div>
+                                            <div class="input-group">
+                                                <select name="custom_city_selection_july2015" required=""
+                                                    data-msg-required="Xin vui lòng chọn khu vực sống"
+                                                    class="form-control valid" aria-required="true"
+                                                    aria-invalid="false">
+                                                    <option value="-">Chọn khu vực bạn sống</option>
+                                                    <option value="01-Thành phố Hà Nội">Hà Nội</option>
+                                                    <option value="79-Thành phố Hồ Chí Minh">Hồ Chí Minh</option>
+                                                    <option value="T.P Biên Hòa">T.P Biên Hòa</option>
+                                                    <option value="74-Tỉnh Bình Dương">T.P Bình Dương</option>
+                                                    <option value="48-Thành phố Đà Nẵng">Đà Nẵng</option>
+                                                    <option value="Nha Trang">Nha Trang</option>
+                                                    <option value="92-Thành phố Cần Thơ">Cần Thơ</option>
+                                                    <option value="Vũng Tàu">Vũng Tàu</option>
+                                                </select> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="input-group-wrapper">
+                                            <div class="input-group btn-center">
+                                                <button type="submit" id="cta_signup_form" data_ceid="cta_signup_form"
+                                                    value="Đăng ký ngay" class="btn btn-danger btn-regis">ĐĂNG KÝ NGAY
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,7 +156,7 @@
                         <div class="blog-detail">
                             <div class="row">
                                 <div class="col-md-12 col-lg-6 col-12">
-                                    <a href="#">
+                                    <a href="./post.html">
                                         <div class="blog-img" style="background-image: url(./img/blog/blog.jpg);">
                                         </div>
                                     </a>
@@ -109,7 +165,7 @@
                                     <div class="blog-content">
                                         <div class="date-tag">
                                             <div class="tag">
-                                                <a href="#" class="text-danger">
+                                                <a href="./post.html" class="text-danger">
                                                     <i class="fas fa-circle"></i>
                                                     <span class="text-dark"> Bài tập nữ</span>
                                                 </a>
@@ -119,7 +175,7 @@
                                                 <span> 20/11/2019</span>
                                             </div>
                                         </div>
-                                        <a href="#" class="text-dark">
+                                        <a href="./post.html" class="text-dark">
                                             <h3 class="title-blog">SỞ HỮU EO THON, CƠ XẺ DỌC VỚI 5 BÀI TẬP PLANK ĐƠN
                                                 GIẢN
                                             </h3>
@@ -131,7 +187,7 @@
                                         </div>
                                         <div class="more">
                                             <div class="read-more">
-                                                <a class="text-danger" href="#">XEM THÊM
+                                                <a class="text-danger" href="./post.html">XEM THÊM
                                                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                                                 </a>
                                             </div>
@@ -155,8 +211,8 @@
                         <div class="blog-detail left">
                             <div class="row">
                                 <div class="col-md-12 col-lg-6 col-12">
-                                    <a href="#">
-                                        <div class="blog-img" style="background-image: url(./img/blog/blog.jpg);">
+                                    <a href="./post.html">
+                                        <div class="blog-img" style="background-image: url(./img/blog/blog4.jpeg);">
                                         </div>
                                     </a>
                                 </div>
@@ -164,9 +220,9 @@
                                     <div class="blog-content">
                                         <div class="date-tag">
                                             <div class="tag">
-                                                <a href="#" class="text-danger">
+                                                <a href="./post.html" class="text-danger">
                                                     <i class="fas fa-circle"></i>
-                                                    <span class="text-dark"> Bài tập nữ</span>
+                                                    <span class="text-dark"> Gym</span>
                                                 </a>
                                             </div>
                                             <div class="date-box">
@@ -174,19 +230,18 @@
                                                 <span> 20/11/2019</span>
                                             </div>
                                         </div>
-                                        <a href="#" class="text-dark">
-                                            <h3 class="title-blog">SỞ HỮU EO THON, CƠ XẺ DỌC VỚI 5 BÀI TẬP PLANK ĐƠN
-                                                GIẢN
+                                        <a href="./post.html" class="text-dark">
+                                            <h3 class="title-blog">CÁC BÀI TẬP THỂ HÌNH DÀNH CHO NGƯỜI BẬN RỘN
                                             </h3>
                                         </a>
                                         <div class="content">
-                                            <p>Tập plank được xem như bài tập "thần thánh" để đốt cháy mỡ bụng hiệu quả.
-                                                Hãy cùng Gymzone Fitness khám phá 5 bài tập plank đơn giản mà cực
-                                                chất trong bài viết sau. </p>
+                                            <p>Nếu bạn đang quá bận với công việc của mình, không có đủ thời gian để tới
+                                                phòng tập thì hãy tham khảo các bài tập gym dưới đây tại nhà để duy trì
+                                                vóc dáng, tăng cường sức khỏe .... </p>
                                         </div>
                                         <div class="more">
                                             <div class="read-more">
-                                                <a class="text-danger" href="#">XEM THÊM
+                                                <a class="text-danger" href="./post.html">XEM THÊM
                                                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                                                 </a>
                                             </div>
@@ -210,8 +265,8 @@
                         <div class="blog-detail">
                             <div class="row">
                                 <div class="col-md-12 col-lg-6 col-12">
-                                    <a href="#">
-                                        <div class="blog-img" style="background-image: url(./img/blog/blog.jpg);">
+                                    <a href="./post.html">
+                                        <div class="blog-img" style="background-image: url(./img/blog/blog3.jpeg);">
                                         </div>
                                     </a>
                                 </div>
@@ -219,9 +274,9 @@
                                     <div class="blog-content">
                                         <div class="date-tag">
                                             <div class="tag">
-                                                <a href="#" class="text-danger">
+                                                <a href="./post.html" class="text-danger">
                                                     <i class="fas fa-circle"></i>
-                                                    <span class="text-dark"> Bài tập nữ</span>
+                                                    <span class="text-dark"> Bài tập nam</span>
                                                 </a>
                                             </div>
                                             <div class="date-box">
@@ -229,19 +284,18 @@
                                                 <span> 20/11/2019</span>
                                             </div>
                                         </div>
-                                        <a href="#" class="text-dark">
-                                            <h3 class="title-blog">SỞ HỮU EO THON, CƠ XẺ DỌC VỚI 5 BÀI TẬP PLANK ĐƠN
-                                                GIẢN
+                                        <a href="./post.html" class="text-dark">
+                                            <h3 class="title-blog">TÌNH TRẠNG CĂNG CƠ LƯNG VÀ CÁCH XỬ LÝ ĐƠN GIẢN, HIỆU
+                                                QUẢ
                                             </h3>
                                         </a>
                                         <div class="content">
-                                            <p>Tập plank được xem như bài tập "thần thánh" để đốt cháy mỡ bụng hiệu quả.
-                                                Hãy cùng Gymzone Fitness khám phá 5 bài tập plank đơn giản mà cực
-                                                chất trong bài viết sau. </p>
+                                            <p>Tình trạng căng cơ lưng và cách xử lý đơn giản, hiệu quả Đau cơ lưng là
+                                                tình trạng phổ biến hiện nay, hiện tượng này thường xảy ra..... </p>
                                         </div>
                                         <div class="more">
                                             <div class="read-more">
-                                                <a class="text-danger" href="#">XEM THÊM
+                                                <a class="text-danger" href="./post.html">XEM THÊM
                                                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                                                 </a>
                                             </div>
@@ -265,8 +319,8 @@
                         <div class="blog-detail left">
                             <div class="row">
                                 <div class="col-md-12 col-lg-6 col-12">
-                                    <a href="#">
-                                        <div class="blog-img" style="background-image: url(./img/blog/blog.jpg);">
+                                    <a href="./post.html">
+                                        <div class="blog-img" style="background-image: url(./img/blog/blog6.jpg);">
                                         </div>
                                     </a>
                                 </div>
@@ -274,7 +328,7 @@
                                     <div class="blog-content">
                                         <div class="date-tag">
                                             <div class="tag">
-                                                <a href="#" class="text-danger">
+                                                <a href="./post.html" class="text-danger">
                                                     <i class="fas fa-circle"></i>
                                                     <span class="text-dark"> Bài tập nữ</span>
                                                 </a>
@@ -284,19 +338,19 @@
                                                 <span> 20/11/2019</span>
                                             </div>
                                         </div>
-                                        <a href="#" class="text-dark">
-                                            <h3 class="title-blog">SỞ HỮU EO THON, CƠ XẺ DỌC VỚI 5 BÀI TẬP PLANK ĐƠN
-                                                GIẢN
+                                        <a href="./post.html" class="text-dark">
+                                            <h3 class="title-blog">BẠN ĐÃ BIẾT LÀM THỂ NÀO ĐỂ CHẠY BỀN KHÔNG BỊ MẤT SỨC
+                                                CHƯA?
                                             </h3>
                                         </a>
                                         <div class="content">
-                                            <p>Tập plank được xem như bài tập "thần thánh" để đốt cháy mỡ bụng hiệu quả.
-                                                Hãy cùng Gymzone Fitness khám phá 5 bài tập plank đơn giản mà cực
-                                                chất trong bài viết sau. </p>
+                                            <p>Bạn tham gia tập chạy bộ nhưng đã biết làm thế nào để việc chạy bền không
+                                                bị mệt và mất sức để chạy được lâu chứa. Nhằm giúp bạn có kinh nghiệm
+                                                khi tham gia chạy bền,...</p>
                                         </div>
                                         <div class="more">
                                             <div class="read-more">
-                                                <a class="text-danger" href="#">XEM THÊM
+                                                <a class="text-danger" href="./post.html">XEM THÊM
                                                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                                                 </a>
                                             </div>
@@ -360,35 +414,35 @@
                             <h3 class="title-right">BÀI VIẾT GẦN ĐÂY:</h3>
                             <div class="post-box">
                                 <div class="post-img">
-                                    <a href="#"><img class="img-fluid" src="./img/blog/recent-post1.png"></a>
+                                    <a href="./post.html"><img class="img-fluid" src="./img/blog/recent-post1.png"></a>
                                 </div>
                                 <div class="post-title">
-                                    <a class="text-dark" href="#">
+                                    <a class="text-dark" href="./post.html">
                                         <h4>TẬP THỂ THAO NÊN CHỌN TAI NGHE NÀO?</h4>
                                     </a>
-                                    <p><a class="text-dark" href="#">20/11/2019</a></p>
+                                    <p><a class="text-dark" href="./post.html">20/11/2019</a></p>
                                 </div>
                             </div>
                             <div class="post-box">
                                 <div class="post-img">
-                                    <a href="#"><img class="img-fluid" src="./img/blog/recent-post2.png"></a>
+                                    <a href="./post.html"><img class="img-fluid" src="./img/blog/recent-post2.png"></a>
                                 </div>
                                 <div class="post-title">
-                                    <a class="text-dark" href="#">
+                                    <a class="text-dark" href="./post.html">
                                         <h4>7 động tác tập tại nhà giúp căng giãn cơ</h4>
                                     </a>
-                                    <p><a class="text-dark" href="#">20/11/2019</a></p>
+                                    <p><a class="text-dark" href="./post.html">20/11/2019</a></p>
                                 </div>
                             </div>
                             <div class="post-box">
                                 <div class="post-img">
-                                    <a href="#"><img class="img-fluid" src="./img/blog/recent-post3.png"></a>
+                                    <a href="./post.html"><img class="img-fluid" src="./img/blog/recent-post3.png"></a>
                                 </div>
                                 <div class="post-title">
-                                    <a class="text-dark" href="#">
+                                    <a class="text-dark" href="./post.html">
                                         <h4>Thay đổi thói quen nhỏ để giảm cân nhanh chóng</h4>
                                     </a>
-                                    <p><a class="text-dark" href="#">20/11/2019</a></p>
+                                    <p><a class="text-dark" href="./post.html">20/11/2019</a></p>
                                 </div>
                             </div>
                         </article>
@@ -407,6 +461,33 @@
                 </div>
             </div>
         </section>
+
+        <section class="preference">
+            <div class="container">
+                <div class="new-header text-center">
+                    <h2>ƯU ĐÃI ĐẶC BIỆT</h2>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4 item">
+                        <a href="./promo.html">
+                            <img class="w-100" src="./img/promo/promo1.png">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 item">
+                        <a href="./promo.html">
+                            <img class="w-100" src="./img/promo/promo2.png">
+                        </a>
+                    </div>
+                    <div class="col-sm-4 col-md-4 col-lg-4 item">
+                        <a href="./promo.html">
+                            <img class="w-100" src="./img/promo/promo3.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <section class="registration">
             <div class="row">
@@ -429,9 +510,9 @@
                     <div class="footer-link col-md-9 col-12">
                         <div
                             class="footer-menu d-flex justify-content-md-end align-items-center flex-md-row flex-column">
-                            <a class="link-footer text-white" href="./faqs.html">Câu hỏi thường gặp</a>
-                            <a class="link-footer text-white" href="./rules.html">Điều khoản</a>
-                            <a class="link-footer text-white" href="./policy.html">Chính sách</a>
+                            <a class="link-footer text-white" href="#">Câu hỏi thường gặp</a>
+                            <a class="link-footer text-white" href=".#">Điều khoản</a>
+                            <a class="link-footer text-white" href="#">Chính sách</a>
                         </div>
                     </div>
                 </div>
@@ -447,7 +528,7 @@
                             <a href="https://www.facebook.com/">
                                 <i class="fab fa-facebook-square"></i>
                             </a>
-                            <a href="https://www.instagram.com/obostadium/">
+                            <a href="https://www.instagram.com/">
                                 <i class="fab fa-instagram"></i>
                             </a>
                             <a href="https://www.pinterest.com/">

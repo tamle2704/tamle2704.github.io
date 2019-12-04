@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="css/header-footer.css" />
     <link rel="stylesheet" type="text/css" href="css/style-course.css" />
     <title>Dịch vụ</title>
-    <link rel="shortcut icon" type="image/png" href="./img/icon/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="./img/icon/favicon.png" />
 </head>
 
 <body>
@@ -67,14 +67,70 @@
             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
                     <div class="modal-body">
-                        ...
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                        <div class="form-inner">
+                            <form>
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="input-group-wrapper">
+                                            <div class="headline input-group">
+                                                <h2>
+                                                    <span>ĐĂNG KÝ</span> <br class="hidden-xs">
+                                                    TẬP THỬ MIỄN PHÍ
+                                                </h2>
+                                                <p><span class="line-short"></span></p>
+                                                <p>Hãy nhanh tay đăng ký để được trải nghiệm trung <br
+                                                        class="hidden-xs"> tâm gần nhất và nhận tư vấn miễn phí về dịch
+                                                    <br class="hidden-xs">vụ tại Gymzone &amp; Fitness!</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-group-wrapper">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Họ tên"
+                                                    aria-describedby="basic-addon1" name="name" id="txtName" required=""
+                                                    data-msg-required="Xin vui lòng nhập tên" aria-required="true">
+                                            </div>
+                                            <div class="input-group">
+                                                <input name="custom_phone_mobile" type="tel" value="" id="txtPhone"
+                                                    class="form-control" placeholder="Số ĐT"
+                                                    aria-describedby="basic-addon1" required=""
+                                                    data-msg-required="Xin vui lòng nhập số điện thoại"
+                                                    data-rule-vnphone="true" data-msg-vnphone="Số ĐT từ 10-11 chữ số."
+                                                    aria-required="true">
+                                            </div>
+                                            <div class="input-group">
+                                                <select name="custom_city_selection_july2015" required=""
+                                                    data-msg-required="Xin vui lòng chọn khu vực sống"
+                                                    class="form-control valid" aria-required="true"
+                                                    aria-invalid="false">
+                                                    <option value="-">Chọn khu vực bạn sống</option>
+                                                    <option value="01-Thành phố Hà Nội">Hà Nội</option>
+                                                    <option value="79-Thành phố Hồ Chí Minh">Hồ Chí Minh</option>
+                                                    <option value="T.P Biên Hòa">T.P Biên Hòa</option>
+                                                    <option value="74-Tỉnh Bình Dương">T.P Bình Dương</option>
+                                                    <option value="48-Thành phố Đà Nẵng">Đà Nẵng</option>
+                                                    <option value="Nha Trang">Nha Trang</option>
+                                                    <option value="92-Thành phố Cần Thơ">Cần Thơ</option>
+                                                    <option value="Vũng Tàu">Vũng Tàu</option>
+                                                </select> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-7">
+                                        <div class="input-group-wrapper">
+                                            <div class="input-group btn-center">
+                                                <button type="submit" id="cta_signup_form" data_ceid="cta_signup_form"
+                                                    value="Đăng ký ngay" class="btn btn-danger btn-regis">ĐĂNG KÝ NGAY
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,94 +149,281 @@
             </div>
         </section>
 
+        <section class="card-set">
+            <div class="container">
+                <div class="new-header text-center">
+                    <h2>DỊCH VỤ THẺ TẬP</h2>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav>
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link title-card active" id="nav-home-tab" data-toggle="tab"
+                                    href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">GÓI KHỞI
+                                    ĐỘNG</a>
+                                <a class="nav-item nav-link title-card" id="nav-profile-tab" data-toggle="tab"
+                                    href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">GÓI
+                                    QUYẾT TÂM</a>
+                                <a class="nav-item nav-link title-card" id="nav-contact-tab" data-toggle="tab"
+                                    href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">GÓI
+                                    ĐAM MÊ</a>
+                                <a class="nav-item nav-link title-card" id="nav-about-tab" data-toggle="tab"
+                                    href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false">GÓI TẬP
+                                    THỬ</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <div class="card-item">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="card-img">
+                                                <img class="w-100" src="./img/course/card-img.png">
+                                            </div>
+                                            <div class="card-sale">
+                                                <img src="./img/course/sale-off.png">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-content">
+                                                <h3>6 THÁNG</h3>
+                                                <p>Phù hợp với các bạn chỉ ở Việt Nam thời gian ngắn hạn, phải thường
+                                                    xuyên
+                                                    di chuyển như du học sinh, v.v. hoặc những bạn muốn thử sức bền, độ
+                                                    kiên
+                                                    trì và tính kỉ luật cá nhân trước khi dấn thân vào con đường tập
+                                                    luyện.
+                                                    Trong thời gian 6 tháng, bạn sẽ trải nghiệm đầy đủ cơ sở vật chất,
+                                                    chất
+                                                    lượng dịch vụ, không khí tập luyện máu lửa ở Gymzone, cũng như nhìn
+                                                    thấy kết quả của bước đầu luyện tập.</p>
+                                                <div class="promotion">
+                                                    <h4>Quà tặng</h4>
+                                                    <ul>
+                                                        <li>2 buổi HLV miễn phí</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="more-card">
+                                                <a href="about.html" class="text-white btn-red">Đăng ký dịch vụ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                aria-labelledby="nav-profile-tab">
+                                <div class="card-item">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="card-img">
+                                                <img class="w-100" src="./img/course/card-img2.png">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-content">
+                                                <h3>12 THÁNG</h3>
+                                                <p>Đây là gói tập phổ biến nhất ở Gymzone. 12 tháng đầu tiên của khó
+                                                    khăn,
+                                                    12 tháng đầu tiên dễ dàng bỏ cuộc, nhưng cũng là 12 tháng đầu tiên
+                                                    nhìn
+                                                    thấy sự thay đổi của bản thân. Hãy kiên trì luyện tập 1 năm, và bạn
+                                                    sẽ
+                                                    có hàng chục năm sau đó để tiếp tục nếp sống văn minh, lành mạnh và
+                                                    kỉ
+                                                    luật như thế.
+                                                </p>
+                                                <div class="promotion">
+                                                    <h4>Quà tặng</h4>
+                                                    <ul>
+                                                        <li>2 buổi HLV miễn phí</li>
+                                                        <li>Tặng túi tập gym</li>
+                                                        <li>Tặng 2 voucher</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="more-card">
+                                                    <a href="about.html" class="text-white btn-red">Đăng ký dịch vụ</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                aria-labelledby="nav-contact-tab">
+                                <div class="card-item">
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-12">
+                                            <div class="card-img">
+                                                <img class="w-100" src="./img/course/card-img3.png">
+                                            </div>
+                                            <div class="card-sale">
+                                                <img src="./img/course/sale-off.png">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-sm-12">
+                                            <div class="card-content">
+                                                <h3>24 THÁNG</h3>
+                                                <p>Nếu là một người có tính kỉ luật và quyết tâm cao độ, có nhu cầu tập
+                                                    luyện trong môi trường đúng chất gym, gắn bó với một cộng đồng có
+                                                    trình
+                                                    độ và hiểu biết, mong muốn duy trì lối sống lành mạnh, với chi phí
+                                                    hiệu
+                                                    quả kinh tế nhất, thì đây sẽ là gói tập dành cho bạn.</p>
+                                                <div class="promotion">
+                                                    <h4>Quà tặng</h4>
+                                                    <ul>
+                                                        <li>2 buổi HLV miễn phí</li>
+                                                        <li>Tặng túi tập gym</li>
+                                                        <li>Tặng 2 voucher</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="more-card">
+                                                <a href="about.html" class="text-white btn-red">Đăng ký dịch vụ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+                                <div class="card-item">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="card-img">
+                                                <img class="w-100" src="./img/course/card-img3.jpg">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-content">
+                                                <h3>1 TUẦN</h3>
+                                                <p>Sẽ là 1 tuần tập thử miễn phí tại Gymzone, bạn có thể trải nghiệm đầy
+                                                    đủ cơ sở vật chất,
+                                                    chất
+                                                    lượng dịch vụ, không khí tập luyện máu lửa ở đây, cũng như nhìn
+                                                    thấy kết quả của bước đầu luyện tập. Bạn sẽ không phải trả bất cứ
+                                                    khoản phí nào trong 1 tuần này. Sau đó bạn có thể cân nhắc các gói
+                                                    tập ở trên.</p>
+                                            </div>
+                                            <div class="more-card">
+                                                <a href="about.html" class="text-white btn-red">Đăng ký dịch vụ</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="course">
             <div class="container">
+                <div class="new-header text-center">
+                    <h2>CÁC LỚP TẬP LUYỆN</h2>
+                    <hr>
+                </div>
                 <div class="row">
-                    <button class="btn btn-secondary col-md-4 col-sm-6 col-lg-3 col-xl-2 col-6 filter-button"
-                        data-filter="all">Tất
+                    <button class="btn btn-secondary active-button filter-course" data-filter="all">Tất
                         cả</button>
-                    <button class="btn btn-secondary col-md-4 col-sm-6 col-lg-3 col-xl-2 col-6 filter-button"
-                        data-filter="groupx">Group-X</button>
-                    <button class="btn btn-secondary col-md-4 col-sm-6 col-lg-3 col-xl-2 col-6 filter-button"
-                        data-filter="weight-loss">Giảm cân</button>
-                    <button class="btn btn-secondary col-md-4 col-sm-6 col-lg-3 col-xl-2 col-6 filter-button"
-                        data-filter="weight-gain">Tăng cân</button>
-                    <button class="btn btn-secondary col-md-4 col-sm-6 col-lg-3 col-xl-2 col-6 filter-button"
-                        data-filter="martial-art">Võ thuật</button>
-                    <button class="btn btn-secondary col-md-4 col-sm-6 col-lg-3 col-xl-2 col-6 filter-button"
-                        data-filter="muscle">Căng cơ</button>
+                    <button class="btn btn-secondary filter-course" data-filter="groupx">Group-X</button>
+                    <button class="btn btn-secondary filter-course" data-filter="weight-loss">Giảm cân</button>
+                    <button class="btn btn-secondary filter-course" data-filter="weight-gain">Tăng cân</button>
+                    <button class="btn btn-secondary filter-course" data-filter="martial-art">Võ thuật</button>
+                    <button class="btn btn-secondary filter-course" data-filter="muscle">Căng cơ</button>
                 </div>
                 <div class="row">
                     <div class="item col-12 col-sm-6 col-md-4 col-lg-4 filter groupx">
-                        <a href="#">
+                        <a href="./kickfit.html">
                             <img class="w-100" src="img/course/yoga.jpg" />
                         </a>
                         <div class="title-course">
-                            <h2 class="name-course">YOGA</h2>
+                            <a href="./kickfit.html">
+                                <h2 class="name-course">YOGA</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="item col-12 col-sm-6 col-md-4 col-lg-4 filter weight-loss">
-                        <a href="#">
+                        <a href="./kickfit.html">
                             <img class="w-100" src="img/course/giamcan.jpg" />
                         </a>
                         <div class="title-course">
-                            <h2 class="name-course">GIẢM CÂN</h2>
+                            <a href="./kickfit.html">
+                                <h2 class="name-course">GIẢM CÂN</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="item col-12 col-sm-6 col-md-4 col-lg-4 filter weight-loss martial-art">
-                        <a href="#">
+                        <a href="./kickfit.html">
                             <img class="w-100" src="img/course/kickfit.jpg" />
                         </a>
                         <div class="title-course">
-                            <h2 class="name-course">KICKFIT</h2>
+                            <a href="./kickfit.html">
+                                <h2 class="name-course">KICKFIT</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="item col-12 col-sm-6 col-md-4 col-lg-4 filter weight-loss groupx">
-                        <a href="#">
+                        <a href="./kickfit.html">
                             <img class="w-100" src="img/course/dance.jpg" />
                         </a>
                         <div class="title-course">
-                            <h2 class="name-course">DANCE</h2>
+                            <a href="./kickfit.html">
+                                <h2 class="name-course">DANCE</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="item col-12 col-sm-6 col-md-4 col-lg-4 filter muscle weight-gain weight-loss">
-                        <a href="#">
+                        <a href="./kickfit.html">
                             <img class="w-100" src="img/course/hlcn.jpg" />
                         </a>
                         <div class="title-course">
-                            <h2 class="name-course">HUẤN LUYỆN CÁ NHÂN</h2>
+                            <a href="./kickfit.html">
+                                <h2 class="name-course">HUẤN LUYỆN CÁ NHÂN</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="item col-12 col-sm-6 col-md-4 col-lg-4 filter muscle">
-                        <a href="#">
+                        <a href="./kickfit.html">
                             <img class="w-100" src="img/course/giamcangco.jpg" />
                         </a>
                         <div class="title-course">
-                            <h2 class="name-course">GIẢM CĂNG CƠ</h2>
+                            <a href="./kickfit.html">
+                                <h2 class="name-course">GIẢM CĂNG CƠ</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="item col-12 col-sm-6 col-md-4 col-lg-4 filter weight-gain weight-loss">
-                        <a href="#">
+                        <a href="./kickfit.html">
                             <img class="w-100" src="img/course/battlerope.jpg" />
                         </a>
                         <div class="title-course">
-                            <h2 class="name-course">BATTLE ROPE</h2>
+                            <a href="./kickfit.html">
+                                <h2 class="name-course">BATTLE ROPE</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="item col-12 col-sm-6 col-md-4 col-lg-4 filter weight-gain weight-loss ">
-                        <a href="#">
+                        <a href="./kickfit.html">
                             <img class="w-100" src="img/course/PTX2.png" />
                         </a>
                         <div class="title-course">
-                            <h2 class="name-course">PTX-2</h2>
+                            <a href="./kickfit.html">
+                                <h2 class="name-course">PTX-2</h2>
+                            </a>
                         </div>
                     </div>
                     <div class="item col-12 col-sm-6 col-md-4 col-lg-4 filter martial-art weight-loss weight-gain">
-                        <a href="#">
+                        <a href="./kickfit.html">
                             <img class="w-100" src="img/course/muay.jpg" />
                         </a>
                         <div class="title-course">
-                            <h2 class="name-course">MUAY THÁI</h2>
+                            <a href="./kickfit.html">
+                                <h2 class="name-course">MUAY THÁI</h2>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -208,9 +451,9 @@
                     <div class="footer-link col-md-9 col-12">
                         <div
                             class="footer-menu d-flex justify-content-md-end align-items-center flex-md-row flex-column">
-                            <a class="link-footer text-white" href="./faqs.html">Câu hỏi thường gặp</a>
-                            <a class="link-footer text-white" href="./rules.html">Điều khoản</a>
-                            <a class="link-footer text-white" href="./policy.html">Chính sách</a>
+                            <a class="link-footer text-white" href="#">Câu hỏi thường gặp</a>
+                            <a class="link-footer text-white" href="#">Điều khoản</a>
+                            <a class="link-footer text-white" href="#">Chính sách</a>
                         </div>
                     </div>
                 </div>
