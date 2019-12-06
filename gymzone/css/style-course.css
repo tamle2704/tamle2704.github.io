@@ -45,6 +45,39 @@ a:hover {
     text-align: center;
     color: white;
 }
+.course-item {
+    position: relative;
+    overflow: hidden;
+}
+.course-content {
+    margin: 0 15px;
+    position: absolute;
+    opacity: 0;
+    background-color: #d92329;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease-out;
+}
+.course-content h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: white;
+}
+.course-item:hover .course-content {
+    opacity: 0.6;
+    padding: 0 15px;
+}
+.course-item:hover .title-course {
+    display: none;
+}
 .box-schedule {
     padding: 30px;
     margin: 15px 0;

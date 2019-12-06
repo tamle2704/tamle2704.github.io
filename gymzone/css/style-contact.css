@@ -40,11 +40,11 @@ a:hover {
     padding: 1rem;
     margin: 1.5rem 0;
 }
-.form-reg {
-    padding: 2rem 0;
+.img-form {
+    margin-bottom: 1rem;
 }
-.new-header {
-    margin-bottom: 30px;
+.form-reg .new-header {
+    margin-bottom: 1rem !important;
 }
 .new-header > h2 {
     font-weight: bold;
@@ -59,4 +59,9 @@ hr {
 .form, .map, .contact {
     margin-bottom: 3rem;
 }
-
+.form .row {
+    margin: 0 0px;
+}
+label {
+    margin-bottom: .2rem;;
+}

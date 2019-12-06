@@ -160,7 +160,7 @@ a:hover {
 }
 .testimonial-reel .box .test-component {
     background-color: #fff;
-    padding: 1rem 2.5rem;
+    padding: 1rem 15px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     min-height: 200px;
 }
@@ -177,8 +177,8 @@ a:hover {
 .testimonial-reel .slick-slide {
     opacity: 0.3;
     transition: opacity 0.3s;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .testimonial-reel .slick-cloned {
     opacity: 0.3;
@@ -188,6 +188,19 @@ a:hover {
 .testimonial-reel .slick-current.slick-active {
     opacity: 1;
     transition: opacity 0.3s;
+}
+@media (max-width: 480px) {
+    .testimonial-reel .box .test-component {
+        height: 480px;
+        overflow: hidden;
+    }
+    .testimonial-reel .slick-slide {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .slick-slide {
+        margin: 0;
+    }
 }
 .more-picture .modal-body {
     max-width: 1500px;
