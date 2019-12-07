@@ -256,7 +256,10 @@ footer .row {
     color: #d92329;
 }
 .input-group {
-    margin: 20px 0;
+    margin: 0 0 20px ;
+}
+.input-group-wrapper {
+    margin-top: 20px;
 }
 .form-inner .col-sm-7 {
     background-color: rgba(255,255,255,.9);
@@ -265,4 +268,10 @@ footer .row {
     width: 100%;
     padding: 10px 0;
     border-radius: 3px;
+}
+
+.error {
+    margin-top: 5px;
+    color: #d92329;
+    font-size: 14px;
 }

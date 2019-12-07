@@ -70,7 +70,7 @@
                     <div class="modal-body">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
                         <div class="form-inner">
-                            <form>
+                            <form accept-charset="utf-8" action="thank-you.html" method="get" id="formModal">
                                 <div class="row">
                                     <div class="col-sm-7">
                                         <div class="input-group-wrapper">
@@ -88,33 +88,26 @@
 
                                         <div class="input-group-wrapper">
                                             <div class="input-group">
-                                                <input type="text" class="form-control" placeholder="Họ tên"
-                                                    aria-describedby="basic-addon1" name="name" id="txtName" required=""
-                                                    data-msg-required="Xin vui lòng nhập tên" aria-required="true">
+                                                <input type="text" class="form-control w-100" placeholder="Họ tên"
+                                                    name="name" required>
                                             </div>
                                             <div class="input-group">
-                                                <input name="custom_phone_mobile" type="tel" value="" id="txtPhone"
-                                                    class="form-control" placeholder="Số ĐT"
-                                                    aria-describedby="basic-addon1" required=""
-                                                    data-msg-required="Xin vui lòng nhập số điện thoại"
-                                                    data-rule-vnphone="true" data-msg-vnphone="Số ĐT từ 10-11 chữ số."
-                                                    aria-required="true">
+                                                <input name="phone" type="tel" value="" id="txtPhone"
+                                                    class="form-control w-100" placeholder="Số ĐT">
                                             </div>
                                             <div class="input-group">
-                                                <select name="custom_city_selection_july2015" required=""
-                                                    data-msg-required="Xin vui lòng chọn khu vực sống"
-                                                    class="form-control valid" aria-required="true"
-                                                    aria-invalid="false">
-                                                    <option value="-">Chọn khu vực bạn sống</option>
-                                                    <option value="01-Thành phố Hà Nội">Hà Nội</option>
-                                                    <option value="79-Thành phố Hồ Chí Minh">Hồ Chí Minh</option>
-                                                    <option value="T.P Biên Hòa">T.P Biên Hòa</option>
-                                                    <option value="74-Tỉnh Bình Dương">T.P Bình Dương</option>
-                                                    <option value="48-Thành phố Đà Nẵng">Đà Nẵng</option>
-                                                    <option value="Nha Trang">Nha Trang</option>
-                                                    <option value="92-Thành phố Cần Thơ">Cần Thơ</option>
-                                                    <option value="Vũng Tàu">Vũng Tàu</option>
-                                                </select> </div>
+                                                <select name="address" required class="form-control w-100">
+                                                    <option value="">Chọn khu vực bạn sống</option>
+                                                    <option>Hà Nội</option>
+                                                    <option>Hồ Chí Minh</option>
+                                                    <option>T.P Biên Hòa</option>
+                                                    <option>T.P Bình Dương</option>
+                                                    <option>Đà Nẵng</option>
+                                                    <option>Nha Trang</option>
+                                                    <option>Cần Thơ</option>
+                                                    <option>Vũng Tàu</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -246,7 +239,7 @@
                                 vào đó, chỉ cần đưa vào lối sống của mình những thói quen giúp nâng cao chất lượng cuộc
                                 sống, đồng thời giảm thiểu những thói quen không có lợi.."
                             </p>
-                            <p class="content-p text-white">Đối với chúng tôi, lợi ích của khách hàng chính là lợi
+                            <p class="content-p text-white d-none d-lg-block">Đối với chúng tôi, lợi ích của khách hàng chính là lợi
                                 nhuận quý báu nhất. Kết
                                 quả thực sự của khách hàng là những gì thương hiệu Gymzone luôn hướng đến.” </p>
                             <a href="#" class="text-white btn-red" data-toggle="modal"
@@ -309,7 +302,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-lg-6 col-12 col-sm-12 content-dif">
-                        <img class="w-100" src="./img/about us/img2.png">
+                        <img class="w-100" src="./img/about us/IMG3.jpg">
                     </div>
                     <div class="col-md-12 col-lg-6 col-12 col-sm-12 content-dif">
                         <h4 class="title-h4"><span class="text-dark">ĐỘI NGŨ HUẤN LUYỆN VIÊN</span></h4>
@@ -326,7 +319,7 @@
                 </div>
                 <div class="row left">
                     <div class="col-md-12 col-lg-6 col-12 col-sm-12 content-dif">
-                        <img class="w-100" src="./img/about us/img4.png">
+                        <img class="w-100" src="./img/about us/img1.png">
                     </div>
                     <div class="col-md-12 col-lg-6 col-12 col-sm-12 content-dif">
                         <h4 class="title-h4"><span class="text-dark">KẾT QUẢ</span></h4>
@@ -671,7 +664,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="logo col-md-3 col-12 text-md-left text-center">
-                        <a class="navbar-brand text-center font-weight-bold text-white" href="#"><img class="img-fluid"
+                        <a class="navbar-brand text-center font-weight-bold text-white" href="./index.html"><img class="img-fluid"
                                 alt="logo" src="./img/logo.png"></a>
                     </div>
                     <div class="footer-link col-md-9 col-12">
@@ -715,6 +708,10 @@
     <script type="text/javascript" src="./vendor/slick/slick.js"></script>
     <!--Main-->
     <script type="text/javascript" src="./js/main.js"></script>
+    <!--Validate-->
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"
+        type="text/javascript"></script>
+    <script type="text/javascript" src="./js/form-validate.js"></script>
 </body>
 
 </html>
