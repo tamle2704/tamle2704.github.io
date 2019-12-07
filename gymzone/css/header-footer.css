@@ -160,16 +160,19 @@ footer .row {
     z-index: 99;
     color: #d92329;
 }
-.carousel-index .slick-prev:before, .carousel-index .slick-next:before {
-    color: white;
+.banner-index .slick-prev:before, .banner-index .slick-next:before {
+    color: blue;
+}
+.banner-index .slick-next, .banner-index .slick-prev {
+    color: blue;
 }
 .slick-prev:before, .slick-next:before{
     line-height: 0;
     font-size: 5.555rem;
-    color: #d92329;
+    color: blue;
 }
 .slick-prev:hover:before, .slick-next:hover:before{
-    color: black;
+    opacity: 0.8;
 }
 .slick-prev:before{
     content: "‹";

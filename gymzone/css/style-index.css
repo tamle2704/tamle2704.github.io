@@ -299,3 +299,9 @@ a:hover {
     color:#fff;
     opacity:1;
 }
+.carousel-index .slick-prev::before, .carousel-index .slick-next::before {
+    color: blue !important;
+}
+.banner-index .slick-next, .banner-index .slick-prev {
+    color: blue !important;
+}
