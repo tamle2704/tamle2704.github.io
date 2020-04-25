@@ -20,19 +20,22 @@
         <input class="date" type="date"  name="date" id="date" required/>
         <label>Giới tính</label>
         <div class="radio">    
-        <input type="radio" name="gender" value="Nam"/> Nam
-        <input type="radio" name="gender" value="Nữ" /> Nữ
-        <input type="radio" name="gender" value="Bê đê"/> Bê đê
+        <input type="radio" name="gender" id="nam" value="Nam"/>
+        <label for="nam">Nam</label>
+        <input type="radio" name="gender" id="nu" value="Nữ" />
+        <label for="nu">Nữ</label>
+        <input type="radio" name="gender" id="bede" value="Bê đê"/>
+        <label for="bede" >Bê đê</label>
         </div>
-        <label>Địa chỉ</label>
-        <input type="text" placeholder="Cho xin cái địa chỉ nhà đi!" name="address" required/>
+        <label required>Địa chỉ</label> 
+        <input type="text" placeholder="Cho xin cái địa chỉ nhà đi!" name="address"/>
         <label>Số điện thoại</label>
         <input type="tel" placeholder="Biết tên rồi phải biết số điện thoại chứ nhỉ" name="phone" required/>
         <label>Email</label>
         <input type="email" placeholder="Cho xin thêm cái email vào đây!" name="email"required/>
         <label>Mật khẩu</label>
         <input type="password" placeholder="Password nhập ở đây!!" name="password" required/>
-        <button type="submit" >Gửi</button>
+        <button type="submit">Gửi</button>
     </form>
     </fieldset>
     </div>
@@ -61,6 +64,7 @@
                                 email: true
                             },
                             date: "required",
+                            gender: "required",
                         },
                         messages: {
                             username: "Đằng ấy chả chịu nhập tên gì cả!",
@@ -82,9 +86,18 @@
                                 email: "Nhập đúng định dạng email dùm e nha."
                             },
                             date: "Chọn giùm em ngày sinh với!",
+                            gender: "Giới tính không để trống nha!",
+                        },
+                        errorPlacement: function(error, element){
+                            if(element.is(":radio")){
+                                error.appendTo('.radio');
+                            }else {
+                                error.insertAfter(element);
+                            }
                         }
                     });
         });
+        
         </script>
 </body>
 </html>

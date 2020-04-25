@@ -34,7 +34,7 @@ body {
         padding-left: 0;
     }
     .description,.post, .blog {
-        width: 900px;
+        max-width: 900px;
         margin: auto;
     }
     .item {

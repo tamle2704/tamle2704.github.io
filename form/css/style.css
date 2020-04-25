@@ -20,6 +20,9 @@ label.error {
     font-size: 14px;
     margin: 0px auto 15px auto;
 }
+.radio label {
+    margin: 5px;
+}
 .login {
     width: 500px;
     height: auto;

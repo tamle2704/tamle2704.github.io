@@ -4,7 +4,7 @@
 body {
 	margin: auto;
 	padding: auto;
-	font-family: 'Dancing Script', cursive;
+	font-family: Helvetica, Arial, sans-serif;
 }
 #wrap {
  	max-width: 1200px;
@@ -87,7 +87,7 @@ a {
 	text-align: center;
 	font-size: 26px;
 	margin-bottom: 15px;
-	font-family: 'Dancing Script', cursive;
+	font-family: Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	text-decoration: underline wavy red;
 }
@@ -145,7 +145,7 @@ img {
 }
 .name > a {
 	color: black;
-	font-family: 'Dancing Script', cursive;
+	font-family: Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	font-size: 22px;
 	line-height: 30px;
