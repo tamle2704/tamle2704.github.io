@@ -20,7 +20,7 @@ a:hover {
     padding-bottom: 20px;
     border-bottom: 1px solid #d92329;
 }   
-.blog-detail:nth-child(4) {
+.blog-detail:last-child {
     border-bottom: none;
 }    
 .blog-content {
@@ -176,3 +176,19 @@ ul li {
 .preference .item {
     margin: 0px auto 1.5rem;
 }
+.left {
+    animation: left 0.5s both linear;
+  }
+  @keyframes left {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate(-25px, 0px);
+      -ms-transform: translate(-25px, 0px);
+      transform: translate(-25px, 0px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0px) translateY(0px) translateZ(0px);
+    }
+  }
