@@ -24,10 +24,10 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav text-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="#about">Giới thiệu</a>
+                                <a class="nav-link" href="#education">Học vấn</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#education">Học vấn</a>
+                                <a class="nav-link" href="#about">Tính cách</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#target">Mục tiêu</a>
@@ -169,7 +169,8 @@
                                 <img src="cv/images/minimo.png" alt="kanban"
                                     class="project-img project-img-six img-fluid">
                             </div>
-                            <a href="https://tamle2704.github.io/minimo/" target="_blank" class="project-link position-absolute">MINIMO
+                            <a href="https://tamle2704.github.io/minimo/" target="_blank"
+                                class="project-link position-absolute">MINIMO
                                 <br><br><span class="project-sub-title">(Cắt HTML)</span></a>
                             <div class="technology text-center text">
                                 <p>
@@ -219,8 +220,7 @@
                         </div>
                         <div class=" project-item project-six">
                             <div class="image-wrapper">
-                                <img src="cv/images/manage-student.png" alt="kanban"
-                                    class="project-img  img-fluid">
+                                <img src="cv/images/manage-student.png" alt="kanban" class="project-img  img-fluid">
                             </div>
                             <a href="https://reactjs.tamle2704.now.sh/" target="_blank"
                                 class="project-link position-absolute">MANAGE-STUDENT <br><br><span
@@ -253,7 +253,7 @@
                             </div>
                             <a href="https://nextjs.tamle2704.now.sh/" target="_blank" class="overlay"></a>
                         </div>
-                        
+
                     </div>
                 </div>
                 <a id="button"><i class='far fa-arrow-alt-circle-up'></i></a>
@@ -266,6 +266,10 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script>
+        $('.nav-link').on('click', () => {
+            $('.navbar-collapse').removeClass('show');
+        });
+
         // back-to-top
         var btn = $('#button');
         $(window).scroll(function () {
