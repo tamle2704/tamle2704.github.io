@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Happy Point</title>
+    <link rel="shortcut icon" type="image/png" href="./image/favicon.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- navbar -->
+        <!-- navbar button -->
+        <span class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+        </span>
+        <nav class="navbar" id="navbar">
+            <div class="navbar-header">
+                <span class="nav-close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </span>
+            </div>
+            <ul class="nav-items">
+                <li><a href="#" class="nav-link">new arrivals</a></li>
+                <li><a href="#" class="nav-link">boots</a></li>
+                <li><a href="#" class="nav-link">flats</a></li>
+                <li><a href="#" class="nav-link">heels</a></li>
+                <li><a href="#" class="nav-link">sandals</a></li>
+                <li><a href="#" class="nav-link">sneakers</a></li>
+                <li><a href="#" class="nav-link">sale</a></li>
+                <li><a href="#" class="nav-link">view all</a></li>
+                <li><a href="#" class="nav-link">campaign</a></li>
+                <li><a href="#" class="nav-link">story</a></li>
+            </ul>
+        </nav>
+        <!-- end of navbar -->
+        <!-- header -->
+
+        <header class="header">
+            <div class="banner">
+                <h1 class="none">happypoints</h1>
+                <h1 class="show">happy points</h1>
+            </div>
+        </header>
+        <section class="album">
+            <div class="row">
+                <a href="#">
+                    <div class="block">
+                        <div class="bg" style="background-image: url('../image/album-1.jpg');"></div>
+                        <div class="title-album">
+                            <h2 class="none">HAPPYPOINTS</h2>
+                            <h2 class="show">HAPPY POINTS</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="block">
+                        <div class="bg" style="background-image: url('../image/album-2.jpg');"></div>
+                        <div class="title-album">
+                            <h2 class="title-right">HAMSA</h2>
+                            <p>TECHNOLOGIES</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="tag">
+            <h2 class="tag-photo">tag your photos with #HAPPYPOINTS and #HAMSA TECHNOLOGIES </h2>
+        </section>
+        <section class="random-photo">
+            <div class="row">
+                <img class="block-photo" src="./image/Layer 15.jpg" alt="layer15" />
+                <img class="block-photo" src="./image/Layer 16.jpg" alt="layer16" />
+                <img class="block-photo" src="./image/Layer 17.jpg" alt="layer17" />
+                <img class="block-photo" src="./image/Layer 18.jpg" alt="layer18" />
+                <img class="block-photo" src="./image/Layer 19.jpg" alt="layer19" />
+            </div>
+        </section>
+        <section class="contact">
+            <div class="row">
+                <div class="left">
+                    <div class="subcribe">
+                        <h3 class="title-subcribe"> get 15% off when you subscribe!</h3>
+                        <form>
+                            <input type="email" placeholder="">
+                            <button type="submit">go</button>
+                        </form>
+                    </div>
+                    <div class="social-media">
+                        <div class="row">
+                            <a href="#"><img src="./image/fb.jpg" alt="fb" /></a>
+                            <a href="#"><img src="./image/twitter.jpg" alt="twitter" /></a>
+                            <a href="#"><img src="./image/pinterest.jpg" alt="pinterest" /></a>
+                            <a href="#"><img src="./image/insta.jpg" alt="insta" /></a>
+                            <a href="#"><img src="./image/google.jpg" alt="google" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h3>customer care</h3>
+                    <a href="#">
+                        <p>Ordering & Payment</p>
+                    </a>
+                    <a href="#">
+                        <p> Shipping & Tracking</p>
+                    </a>
+                    <a href="#">
+                        <p> Returns</p>
+                    </a>
+                    <a href="#">
+                        <p> International</p>
+                    </a>
+                    <a href="#">
+                        <p> Contact Us</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="information">
+                <div class="row">
+                    <a href="#">Company Info </a>
+                    <a href="#">Privacy Policy (Updated 2017)</a>
+                    <a href="#">Terms of Use </a>
+                    <a href="#">California Transparency in Supply Chains Act Statement </a>
+                    <a href="#">Site Map</a>
+
+                </div>
+            </div>
+        </footer>
+        <script>
+            // setup nav
+            const navBtn = document.getElementById('nav-btn');
+            const navbar = document.getElementById('navbar');
+            const navClose = document.getElementById('nav-close');
+            // show nav
+            navBtn.addEventListener('click', () => {
+                navbar.classList.add('showNav');
+            });
+            // close nav
+            navClose.addEventListener('click', () => {
+                navbar.classList.remove('showNav');
+            });
+        </script>
+    </div>
+</body>
+
+</html>

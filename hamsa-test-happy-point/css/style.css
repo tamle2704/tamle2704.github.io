@@ -1,0 +1,369 @@
+@font-face {
+  font-family: Gotham-bold;
+  src: url(../font/gothamhtf-bold-webfont.ttf);
+  src: url(../font/gothamhtf-bold-webfont.ttf?#iefix);
+  font-family: Gotham-book;
+  src: url(../font/gothamhtf-book-webfont.ttf);
+  src: url(../font/gothamhtf-book-webfont.ttf?#iefix);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Gotham-bold;
+  background-color: black;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1440px;
+  margin: auto;
+  background-color: white;
+  position: relative;
+}
+.row {
+  display: flex;
+}
+.nav-btn,
+.nav-close {
+  display: none;
+}
+
+/* navbar */
+.navbar {
+  position: absolute;
+  top: 168px;
+  left: 53px;
+  z-index: 1;
+}
+
+.nav-items {
+  list-style-type: none;
+}
+.nav-items .nav-link:hover {
+  transform: scale(1.1);
+  transition: transform 1.3s cubic-bezier(0.25, 0.45, 0.45, 0.95) 0s;
+  color: #0088cc;
+}
+.nav-link {
+  display: block;
+  font-size: 14.3px;
+  text-transform: uppercase;
+  font-family: Gotham-book;
+  color: #000;
+  letter-spacing: 3px;
+  margin-bottom: 37px;
+  font-weight: 600;
+}
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+.active {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .nav-btn {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    top: 5%;
+    left: 5%;
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translate(-100%);
+    background-color: #fff;
+  }
+
+  .showNav {
+    transform: translate(0);
+  }
+
+  .nav-link {
+    padding: 0.8rem 1.6rem;
+  }
+
+  .navbar-header {
+    text-align: right;
+    padding: 1.6rem;
+  }
+
+  .nav-close {
+    display: block;
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #000;
+    transition: var(--transition);
+  }
+
+  .nav-close:hover {
+    color: grey;
+  }
+}
+/*end-navbar*/
+
+/*banner */
+.header {
+  height: 851px;
+  background: url("../image/banner.jpg");
+  position: relative;
+}
+
+.banner {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner h1 {
+  font-family: Gotham-bold, sans-serif;
+  font-size: 70px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .banner h1 {
+    font-size: 60px;
+  }
+}
+/* end banner */
+/* space */
+.show {
+  display: none;
+}
+.none {
+  display: inline;
+}
+@media screen and (max-width: 986px) {
+  .show {
+    display: inline;
+  }
+  .none {
+    display: none;
+  }
+}
+/*album */
+
+.block {
+  width: 100%;
+  height: 723px;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+.block:hover {
+  cursor: pointer;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+}
+.album a {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.album .block:hover {
+  transform: scale(1.1);
+  transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95) 0s;
+}
+.title-album {
+  font-family: Gotham-bold, sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.title-album h2 {
+  font-size: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
+.title-right {
+  font-size: 60px !important;
+  line-height: 52px;
+}
+.title-album p {
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+}
+.tag {
+  padding: 25.5px;
+}
+.tag .tag-photo {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Gotham-book;
+  font-size: 17.3px;
+  font-weight: 500;
+}
+.block-photo {
+  width: 20%;
+}
+.block-photo img {
+  width: 100%;
+}
+.contact > .row {
+  justify-content: space-between;
+}
+.contact .left {
+  padding: 46px 0px 25px 95px;
+}
+.subcribe .title-subcribe {
+  text-transform: uppercase;
+  font-family: Gotham-bold;
+  font-size: 17.3px;
+  margin-bottom: 12px;
+}
+.social-media a {
+  margin-right: 29px;
+}
+.social-media a:last-child {
+  margin-right: 0;
+}
+.social-media a:hover {
+  transform: scale(1.1);
+  transition: transform 1.3s cubic-bezier(0.25, 0.45, 0.45, 0.95) 0s;
+}
+.right {
+  padding: 55px 98px 0px 33px;
+}
+.right h3 {
+  font-family: Gotham-bold;
+  text-transform: uppercase;
+  font-size: 17.3px;
+  font-weight: bolder;
+  margin-bottom: 12px;
+}
+.right a {
+  color: black;
+}
+.right a:hover,
+.information a:hover {
+  color: #0088cc;
+}
+.right a p {
+  font-family: Gotham-book;
+  font-size: 12.3px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+input {
+  width: 488px;
+  height: 46px;
+  margin-bottom: 32px;
+}
+.subcribe button {
+  width: 47px;
+  height: 46px;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Gotham-bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+footer {
+  padding: 45px 0 67px 0;
+}
+.information .row {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.information a {
+  color: black;
+  display: block;
+  font-family: Gotham-book;
+  font-size: 10.78px;
+  font-weight: 500;
+  padding: 0 11px;
+  border-right: 1px solid black;
+}
+.information a:last-child {
+  border: none;
+}
+@media screen and (max-width: 942px) {
+  input {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .album .row {
+    flex-direction: column;
+  }
+  .album .block {
+    width: 100%;
+  }
+  .contact > .row {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+    padding: 46px 0 !important;
+  }
+  .left .subcribe {
+    text-align: center;
+  }
+  .social-media .row {
+    justify-content: center;
+  }
+  .right {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  footer {
+    padding: 0 0 30px 0;
+  }
+  .random-photo .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .block-photo {
+    width: 50%;
+  }
+  .information a {
+    padding: 0 5px;
+  }
+}
+@media screen and (max-width: 380px) {
+  input {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .block-photo {
+    width: 100%;
+  }
+}
